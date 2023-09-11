@@ -143,6 +143,7 @@ window.onload = () => {
 	const swiperList = Array.from(document.querySelectorAll("[data-swiper]"));
 	window.swipers = {};
 	let navs, prev, next;
+	let delay = 0;
 	for (let i in swiperList) {
 		const type = swiperList[i].getAttribute("data-swiper");
 		switch (type) {
@@ -232,11 +233,14 @@ window.onload = () => {
 				});
 				break;
 			case "main_side":
-				new Swiper(swiperList[i], {
-					loop: true,
-					allowTouchMove: false,
-					autoplay: true,
-				});
+				setTimeout(function () {
+					new Swiper(swiperList[i], {
+						loop: true,
+						allowTouchMove: false,
+						autoplay: true,
+					});
+				}, delay);
+				delay += 1500;
 				break;
 			case "card":
 				navs = swiperList[i].querySelector(".swipernavs");

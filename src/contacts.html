@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('./components/head.tpl', {
+  pagetitle: 'Контакты',
+  file: 'contacts'
+})
+<body>
+@include('./components/loader.tpl')
+<div class="app contacts_page">
+  @include('./components/header.tpl')
+  <main class="wrap content">
+    @include('./components/breads.tpl', {
+      pagetitle: 'Контакты'
+    })
+    @include('./components/blocks/block23.tpl')
+    @include('./components/blocks/block13.tpl', {
+      block: 'contacts'
+    })
+  </main>
+  @include('./components/footer.tpl')
+</div>
+@include('./components/search.tpl')
+@include('./components/scripts.tpl')
+</body>
+</html>

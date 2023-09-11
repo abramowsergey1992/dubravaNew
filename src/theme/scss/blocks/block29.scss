@@ -1,0 +1,33 @@
+.block29 {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px 66px;
+    padding: 66px 0 0;
+
+    @include media-max(md) { display: block; }
+    li {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+
+      @include media-max(md) {
+        display: block;
+        margin-bottom: 28px;
+      }
+
+      .text {
+        flex: 1 1 auto;
+        font-weight: 300;
+
+        @include media-max(md) {
+          font-weight: 500;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+  .ext {
+    padding: 56px 0 0;
+  }
+}

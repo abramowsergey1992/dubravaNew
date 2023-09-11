@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('./components/head.tpl', {
+  pagetitle: 'О компании',
+  file: 'about'
+})
+<body>
+@include('./components/loader.tpl')
+<div class="app about_page">
+  @include('./components/header.tpl')
+  <main class="wrap content">
+    @include('./components/breads.tpl', { pagetitle: 'О компании' })
+    @include('./components/blocks/block16.tpl')
+    @include('./components/blocks/block17.tpl')
+    @include('./components/blocks/block18.tpl')
+    <div class="bganimation style1">
+      @include('./components/blocks/block19.tpl')
+      @include('./components/blocks/block20.tpl')
+    </div>
+    @include('./components/blocks/block21.tpl')
+  </main>
+  @include('./components/footer.tpl')
+</div>
+@include('./components/certificates.tpl')
+@include('./components/search.tpl')
+@include('./components/scripts.tpl')
+</body>
+</html>

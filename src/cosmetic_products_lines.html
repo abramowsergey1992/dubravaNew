@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('./components/head.tpl', {
+  pagetitle: 'Линейки косметических средств'
+})
+<body>
+@include('./components/loader.tpl')
+<div class="app cosmetic_products_lines_page">
+  @include('./components/header.tpl')
+  <main class="wrap content">
+    @include('./components/breads.tpl', {
+      pagetitle: 'Линейки косметических средств'
+    })
+    @include('./components/blocks/block25.tpl', {
+      block: 'cosmetic_products_lines'
+    })
+    @include('./components/blocks/block34.tpl')
+  </main>
+  @include('./components/footer.tpl')
+</div>
+@include('./components/search.tpl')
+@include('./components/scripts.tpl')
+</body>
+</html>

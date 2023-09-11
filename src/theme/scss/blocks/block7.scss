@@ -1,0 +1,67 @@
+.block7 {
+  margin: 200px 0 0;
+
+  @include media-max(xl) { margin-top: 60px; }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+
+    @include media-max(md) { display: block; }
+
+    li {
+      &:first-child {
+        padding: 163px 60px 76px;
+        color: var(--color-white);
+        transition: transform .7s;
+        background: linear-gradient(45deg, var(--color-animate-purple-10) 5.65%, var(--color-animate-purple-40) 94.35%);
+        backdrop-filter: blur(9px);
+        overflow: hidden;
+
+        @include media-max(xl) { padding-top: 104px; }
+        @include media-max(md) {
+          padding: 50px 18px;
+          margin-bottom: 12px;
+        }
+
+        &:hover { transform: scale(.97); }
+
+        .h1,
+        .text,
+        a.btn {
+          position: relative;
+          z-index: 1;
+        }
+        .text {
+          padding: 32px 0 0;
+          font-weight: 300;
+          letter-spacing: -0.6px;
+
+          @include media-max(lg) {
+            font-size: 14px;
+            line-height: 24px;
+            padding-top: 18px ;
+          }
+        }
+        a.btn {
+          margin: 32px 0 0;
+
+          @include media-max(lg) { margin-top: 20px; }
+        }
+      }
+      &:last-child {
+        min-height: 320px;
+        overflow: hidden;
+        video {
+          width: 100%;
+          height: 100%;
+          aspect-ratio: 1/.68;
+          object-fit: cover;
+          vertical-align: bottom;
+
+          @include media-max(xl) { aspect-ratio: 1/.93; }
+        }
+      }
+    }
+  }
+}

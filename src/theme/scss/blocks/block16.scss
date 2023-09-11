@@ -1,0 +1,68 @@
+.block16 {
+  @include media-max(md) {
+    background: url(../../theme/img/logo_about_big.png) no-repeat 50% 100%/cover;
+    &.bganimation.style1 {
+      &::before,
+      &::after { display: none; }
+    }
+    .info img { display: none; }
+  }
+  .info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100Vh - 165px);
+    padding: 0 0 165px;
+    text-align: center;
+
+    @include media-max(md) {
+      text-align: left;
+      height: auto;
+      letter-spacing: -.6px;
+      padding-bottom: 34px;
+
+      br { display: none; }
+    }
+
+    h1 {
+      position: relative;
+      z-index: 1;
+    }
+    .text {
+      position: relative;
+      margin: 0 auto;
+      padding: 10px 0 0;
+      font-weight: 300;
+      z-index: 1;
+
+      @include media-max(md) { padding-top: 0; }
+    }
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      transition: none;
+      z-index: 0;
+    }
+  }
+  .h3 {
+    position: relative;
+    z-index: 1;
+    p {
+      padding: 0 0 10px;
+      letter-spacing: -1px;
+
+      @include media-max(md) {
+        font-size: 15px;
+        font-weight: 400;
+        margin-right: 25px;
+        line-height: 22px;
+      }
+
+      &:last-child { padding: 0; }
+      span { color: var(--color-text-hover); }
+    }
+  }
+}

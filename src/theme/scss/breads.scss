@@ -1,0 +1,34 @@
+.breads {
+  padding: 22px 0 0;
+
+  ul {
+    display: flex;
+    align-items: center;
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+      &:after {
+        display: block;
+        max-width: 4px;
+        min-width: 4px;
+        height: 4px;
+        margin: 0 12px;
+        border-radius: 50%;
+        background: var(--color-text-hover);
+        content: "";
+      }
+      a {
+        color: var(--color-text-gray);
+      }
+      span {
+        color: var(--color-text-hover);
+      }
+    }
+  }
+}

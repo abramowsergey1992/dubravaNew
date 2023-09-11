@@ -1,0 +1,39 @@
+section.block11 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  @include media-max(md) { display: block; }
+
+  h1 {
+    position: relative;
+    z-index: 1;
+  }
+  .info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+
+    @include media-max(md) { font-size: 13px; }
+
+    .text {
+      width: 100%;
+      line-height: 32px;
+
+      @include media-max(md) { line-height: 23px; }
+
+      &:nth-child(1) {
+        color: var(--color-text-hover);
+      }
+      &:nth-child(2) {
+        padding: 10px 0 0;
+        text-align: right;
+      }
+    }
+    a.btn {
+      margin: 24px 0 0;
+    }
+  }
+}

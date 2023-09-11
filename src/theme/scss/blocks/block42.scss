@@ -1,0 +1,31 @@
+.block42 {
+  .search-result-list {
+    margin-top: 50px;
+
+    li {
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        color: #121720;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: 'Manrope';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+
+        @include media-max(sm) {
+          font-size: 18px;
+          line-height: 28px;
+          font-weight: 300;
+        }
+
+        &:hover {
+          color: var(--color-text-hover);
+        }
+      }
+    }
+  }
+}

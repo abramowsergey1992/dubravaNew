@@ -1,0 +1,175 @@
+.block6 {
+  margin: 110px 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16%;
+
+  @include media-max(xl) {
+    margin-top: 130px;
+    gap: 8%;
+  }
+  @include media-max(lg) {
+    margin-top: 70px;
+    display: block;
+  }
+
+  .item {
+    position: relative;
+    &:first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .h1,
+      .text,
+      .btn,
+      .flask {
+        position: relative;
+        z-index: 1;
+      }
+      .text {
+        margin: 32px 0 0 0;
+        font-weight: 300;
+        letter-spacing: -0.6px;
+
+        @include media-max(xl) { max-width: 580px; }
+        @include media-max(lg) { margin-top: 18px; }
+      }
+      .btn {
+        margin: 48px 0 0;
+      }
+      .flask {
+        max-width: 110px;
+        margin: auto auto 0;
+        transform: rotate(28deg);
+
+        @include media-max(lg) { margin: 100px auto -50px; }
+
+        img {
+          max-width: 100%;
+
+          @include media-max(lg) { max-width: 60%; }
+        }
+        .filter {
+          position: absolute;
+          bottom: 2px;
+          left: 20px;
+          width: 75px;
+          height: 81%;
+          border-radius: 0 0 50px 50px;
+          mix-blend-mode: lighten;
+          overflow: hidden;
+          transition: none;
+
+          @include media-max(lg) {
+            left: 13px;
+            width: 43px;
+          }
+
+          .fill {
+            position: absolute;
+            bottom: -50px;
+            left: -200%;
+            width: 600%;
+            height: 0;
+            background: var(--color-text-hover);
+            transform: rotate(-24deg);
+            transition: none;
+            svg {
+              position: relative;
+              width: 61%;
+              height: 9%;
+              min-height: 3px;
+              max-height: 150px;
+              margin: -10px 0 0;
+              transition: none;
+              use {
+                animation: waves 5s cubic-bezier(.55,.5,.45,.5) infinite;
+                &:nth-child(1) {
+                  animation-delay: -2s;
+                  animation-duration: 7s;
+                }
+                &:nth-child(2) {
+                  animation-delay: -3s;
+                  animation-duration: 10s;
+                }
+                &:nth-child(3) {
+                  animation-delay: -4s;
+                  animation-duration: 13s;
+                }
+                &:nth-child(4) {
+                  animation-delay: -5s;
+                  animation-duration: 20s;
+                }
+              }
+            }
+          }
+        }
+      }
+      .bganimation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &:last-child {
+      .h2 {
+        margin-top: 25px;
+        line-height: 44px;
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: -1px;
+
+        @include media-max(xl) { margin-top: 8px; }
+        @include media-max(lg) {
+          margin-top: 140px;
+          font-size: 23px;
+        }
+      }
+      ul {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+        padding: 64px 0 0;
+
+        @include media-max(xl) { gap: 63px; }
+        @include media-max(lg) {
+          padding-top: 20px;
+          gap: 20px;
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+
+          @include media-max(lg) { display: block; }
+
+          .info {
+            flex: 1 1 auto;
+
+            @include media-max(lg) { margin-top: 40px; }
+
+            .desc {
+              padding: 8px 0 0;
+              letter-spacing: -0.5px;
+              margin-right: 55px;
+
+              @include media-max(lg) { margin-right: 0; }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes waves {
+  0% {
+    transform: translate3d(-90px,0,0);
+  }
+  100% {
+    transform: translate3d(85px,0,0);
+  }
+}

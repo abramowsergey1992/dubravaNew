@@ -1,0 +1,58 @@
+.block9 {
+  margin: 110px 0 0;
+
+  @include media-max(xl) { margin-top: 90px; }
+
+  .h1 {
+    position: relative;
+    z-index: 1;
+  }
+  ul {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+    z-index: 1;
+    padding: 40px 0 0;
+
+    @include media-max(xl) { grid-template-columns: repeat(5, 1fr); }
+    @include media-max(lg) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      padding-top: 20px;
+    }
+
+    li {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 36px 10px 44px;
+      background: var(--color-white-60);
+      transition: transform .7s;
+      overflow: hidden;
+
+      @include media-max(xl) { padding: 29px 10px; }
+      @include media-max(lg) { padding: 20px 10px; }
+
+      &:hover {
+        background: var(--color-white);
+        transform: scale(.97);
+        img {
+          filter: none;
+          opacity: 1;
+        }
+      }
+      img {
+        width: 100%;
+        max-width: 150px;
+        margin: 0 auto;
+        filter: grayscale(100);
+        mix-blend-mode: multiply;
+        opacity: .5;
+
+        @include media-max(lg) { width: 60%; }
+      }
+    }
+  }
+}

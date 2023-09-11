@@ -1,0 +1,110 @@
+.block33 {
+  position: relative;
+  z-index: 1;
+  form {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      height: auto;
+      gap: 16px;
+
+      li {
+        height: 100%;
+
+        @include media-max(lg) {
+          width: 100%;
+          min-width: 215px !important;
+          max-width: none !important;
+        }
+
+        &:nth-child(1) {
+          max-width: 340px;
+          min-width: 340px;
+
+          .selectbox {
+            button {
+              border-color: var(--color-text-hover);
+              background: var(--color-text-hover);
+              color: var(--color-white);
+              &:after {
+                background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 12L12 15L15 12' stroke='white' stroke-width='1.4' stroke-linecap='square'/%3E%3C/svg%3E%0A");
+              }
+            }
+          }
+        }
+        &:nth-child(2) {
+          max-width: 174px;
+          min-width: 174px;
+        }
+        &:nth-child(3) {
+          max-width: 340px;
+          min-width: 340px;
+        }
+        &:nth-child(4) {
+          max-width: 340px;
+          min-width: 340px;
+        }
+        .selectbox {
+          height: 100%;
+          button {
+            height: 100%;
+            padding: 10px 10px 10px 20px;
+            border: 1px solid var(--color-select-border);
+            border-radius: 15px;
+            background: var(--color-white);
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: -0.28px;
+            &.open {
+              &:after {
+                transform: rotate(-180deg);
+              }
+            }
+            &:after {
+              display: block;
+              max-width: 24px;
+              min-width: 24px;
+              height: 24px;
+              background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 12L12 15L15 12' stroke='%23121720' stroke-width='1.4' stroke-linecap='square'/%3E%3C/svg%3E%0A");
+              background-size: 100%;
+              content: "";
+            }
+          }
+          .hiddenbox {
+            margin: 10px 0 0;
+            ul {
+              display: block;
+              height: auto;
+              padding: 30px 20px;
+              li {
+                height: auto;
+                &:last-child {
+                  label {
+                    padding: 0;
+                  }
+                }
+                a {
+                  font-size: 14px;
+                  font-weight: 300;
+                  line-height: 24px;
+                  letter-spacing: -0.28px;
+                  &.btn {
+                    margin: 20px 0 0;
+                  }
+                }
+                label {
+                  font-size: 14px;
+                  font-weight: 300;
+                  line-height: 24px;
+                  letter-spacing: -0.28px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

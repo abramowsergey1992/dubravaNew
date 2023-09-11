@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('./components/head.tpl', {
+  pagetitle: 'Новости',
+  file: 'news'
+})
+<body>
+@include('./components/loader.tpl')
+<div class="app news_page">
+  @include('./components/header.tpl')
+  <main class="wrap content">
+    @include('./components/breads.tpl', {
+      pagetitle: 'Новости'
+    })
+    @include('./components/blocks/block22.tpl')
+  </main>
+  @include('./components/footer.tpl')
+</div>
+@include('./components/search.tpl')
+@include('./components/scripts.tpl')
+</body>
+</html>

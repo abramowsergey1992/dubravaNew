@@ -1,0 +1,147 @@
+.block24 {
+  ul.swipernavs_slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .swiper.whereby {
+    margin: 26px 0 0;
+    overflow: visible;
+    .swiper-wrapper {
+      height: auto!important;
+    }
+    .swiper-slide {
+      height: 0;
+      overflow: hidden;
+      &-active {
+        height: auto;
+        overflow: visible;
+      }
+      .textbox {
+        padding: 60px 40px;
+        background: var(--color-white-80);
+
+        @include media-max(md) {padding: 30px 16px; }
+
+        .h3 {
+          padding: 0 0 20px;
+          border-bottom: 1px solid var(--color-black-10);
+
+          @include media-max(md) { font-size: 14px; }
+        }
+        .text {
+          padding: 20px 0 0;
+          font-weight: 300;
+
+          @include media-max(md) { font-size: 13px; }
+        }
+      }
+      ul.accordion {
+        padding: 54px 0 0;
+      }
+      .mapbox {
+        padding: 100px 0 0;
+        form {
+          padding: 30px 0 0;
+          .map {
+            padding: 16px 0 0;
+            overflow: hidden;
+          }
+        }
+      }
+      .salesbox {
+        padding: 60px 40px;
+        background: var(--color-white-80);
+
+        @include media-max(md) {padding: 30px 16px; }
+
+        .h2 {
+          padding: 0 0 20px;
+          border-bottom: 1px solid var(--color-black-10);
+
+          @include media-max(md) { font-size: 22px; }
+        }
+        .text {
+          padding: 20px 0 0;
+          font-weight: 300;
+
+          @include media-max(md) { font-size: 13px; }
+        }
+        ul.grid {
+          display: flex;
+          gap: 60px;
+          padding: 20px 0;
+          border-bottom: 1px solid var(--color-black-10);
+
+          @include media-max(md) { display: block; }
+
+          li {
+            @include media-max(md) { margin-bottom: 15px; }
+
+            .text {
+              padding: 0;
+              font-weight: 300;
+            }
+            .h3 {
+              padding: 10px 0 0;
+              line-height: 40px;
+            }
+          }
+        }
+        button.btn {
+          width: auto;
+          margin: 20px 0 0;
+        }
+        form {
+          .text {
+            font-weight: 300;
+          }
+          .selectbox {
+            max-width: 508px;
+            margin: 20px 0 0;
+            button {
+              height: 50px;
+              border-radius: 10px;
+              background: var(--color-white);
+              &:after {
+                max-width: 28px;
+                min-width: 28px;
+                height: 28px;
+                background-image: url("data:image/svg+xml,%3Csvg width='28' height='29' viewBox='0 0 28 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.40039 12.5667L14.0004 18.3667L19.6004 12.5667' stroke='black' stroke-linecap='square'/%3E%3C/svg%3E%0A");
+                background-size: 100%;
+              }
+            }
+            .hiddenbox {
+              max-height: 300px;
+              ul {
+                padding: 20px 0;
+              }
+            }
+          }
+        }
+        ul.results {
+          li {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 140px;
+            padding: 26px 38px;
+            border-bottom: 1px solid var(--color-black-10);
+
+            @include media-max(md) { display: block; }
+
+            .desc {
+              padding: 0;
+              p {
+                padding: 0 0 2px;
+                &:last-child {
+                  padding: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

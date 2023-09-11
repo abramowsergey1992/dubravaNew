@@ -1,0 +1,35 @@
+.block27 {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 30px 0 0;
+
+    @include media-max(md) { display: block; }
+    li {
+      a {
+        display: block;
+        height: 100%;
+        padding: 30px 20px;
+        background: var(--color-white-80);
+
+        @include media-max(md) {
+          margin-bottom: 16px;
+          padding: 25px 16px;
+        }
+
+        &:hover { transform: scale(.97); }
+        span {
+          display: block;
+          &.h3,
+          &.text {
+            padding: 20px 0 0;
+          }
+          &.text {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}

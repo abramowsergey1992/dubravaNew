@@ -1,0 +1,137 @@
+.block8 {
+  margin: 110px 0 0;
+
+  @include media-max(xl) { margin-top: 120px; }
+  @include media-max(lg) { margin-top: 58px; }
+
+  .swiper {
+    padding: 40px 0 0;
+
+    @include media-max(lg) { padding-top: 20px; }
+
+    .swiper-wrapper {
+      align-items: stretch;
+      .swiper-slide {
+        display: grid;
+        grid-template-rows: 1fr;
+        height: auto;
+        ul {
+          display: grid;
+          grid-template-columns: 1fr;
+
+          @include media-max(lg) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+          }
+
+          li {
+            display: grid;
+            grid-template-columns: 1fr;
+            min-height: 50%;
+            padding: 0 0 16px;
+
+            &:last-child { padding: 0; }
+
+            a {
+              flex: 1 1 auto;
+              flex-flow: row nowrap;
+              gap: 16px;
+              width: 100%;
+              padding: 30px 30px 25px;
+
+              @include media-max(xl) { padding: 30px 24px; }
+              @include media-max(lg) {
+                padding: 12px 18px;
+                flex-direction: column;
+                justify-content: flex-start;
+              }
+
+              span {
+                &.img {
+                  padding: 0;
+                  min-width: 190px;
+                  max-width: 267px;
+                  height: 252px;
+
+                  @include media-max(xl) {
+                    max-width: 190px;
+                    height: 190px;
+                    min-height: 0;
+                  }
+                  @include media-min(xl) { margin: -7px 14px 0 -7px; }
+                }
+                &.info .date { flex-grow: 1; }
+              }
+            }
+          }
+        }
+        a {
+          display: flex;
+          flex-flow: column-reverse nowrap;
+          justify-content: flex-end;
+          padding: 30px 40px;
+          background: var(--color-white);
+
+          @include media-max(xl) { padding: 30px 24px; }
+          @include media-max(lg) { padding: 12px 18px; }
+
+          &:hover { transform: scale(.97); }
+          span {
+            display: block;
+            &.img {
+              width: 100%;
+              margin: 50px 0 0;
+              overflow: hidden;
+
+              @include media-max(xl) { margin-top: 10px; }
+              @include media-max(lg) {
+                min-height: 250px;
+
+                img {
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+
+            }
+            &.info {
+              flex: 1 1 auto;
+              display: flex;
+              flex-direction: column;
+
+              @include media-max(lg) {
+                display: block;
+                flex-grow: 0;
+              }
+
+              .date {
+                font-weight: 300;
+
+                @include media-max(lg) { font-size: 13px; }
+              }
+              .desc {
+                padding: 10px 0 0;
+                font-size: 13px;
+              }
+              h3 {
+                padding: 60px 0 0;
+                letter-spacing: -1.5px;
+
+                @include media-max(xl) { padding-top: 32px; }
+                @include media-max(lg) { padding-top: 6px; }
+              }
+            }
+          }
+        }
+      }
+    }
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 0 0;
+
+      @include media-max(xl) { padding-top: 23px; }
+    }
+  }
+}

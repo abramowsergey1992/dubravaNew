@@ -1,0 +1,348 @@
+.bganimation {
+  position: relative;
+  &:before,
+  &:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    content: "";
+  }
+  &.style1 {
+    &:before {
+      top: 20%;
+      right: 10%;
+      background: var(--color-animate-green);
+      box-shadow: 0 0 170px 170px var(--color-animate-green);
+      opacity: .5;
+      animation: animate_style1_green 20s infinite ease-in-out;
+    }
+    &:after {
+      bottom: 20%;
+      right: 10%;
+      background: var(--color-animate-purple);
+      box-shadow: 0 0 170px 170px var(--color-animate-purple);
+      opacity: .5;
+      transform: matrix(-1,0,0,1,0,0);
+      animation: animate_style1_purple 20s infinite ease-in-out;
+    }
+  }
+  &.style2 {
+    &:before {
+      top: 20%;
+      left: 40%;
+      background: var(--color-animate-green);
+      box-shadow: 0 0 140px 140px var(--color-animate-green);
+      opacity: .5;
+      animation: animate_style2_green 12s infinite ease-in-out;
+    }
+    &:after {
+      top: 30%;
+      right: 20%;
+      background: var(--color-animate-purple);
+      box-shadow: 0 0 140px 140px var(--color-animate-purple);
+      opacity: .5;
+      animation: animate_style2_purple 20s infinite ease-in-out;
+    }
+  }
+  &.style3 {
+    &:before {
+      bottom: 10%;
+      left: 10%;
+      background: var(--color-animate-purple);
+      box-shadow: 0 0 170px 170px var(--color-animate-purple);
+      opacity: .6;
+      animation: animate_style3_purple 20s infinite ease-in-out;
+    }
+    &:after {
+      display: none;
+    }
+  }
+  &.style4 {
+    &:before {
+      top: 20%;
+      left: 50%;
+      background: var(--color-animate-green);
+      box-shadow: 0 0 170px 170px var(--color-animate-green);
+      opacity: .5;
+      animation: animate_style4_green 20s infinite ease-in-out;
+    }
+    &:after {
+      bottom: 20%;
+      right: 40%;
+      background: var(--color-animate-purple);
+      box-shadow: 0 0 120px 120px var(--color-animate-purple);
+      opacity: .5;
+      animation: animate_style4_purple 20s infinite ease-in-out;
+    }
+  }
+  &.style5 {
+    &:before {
+      bottom: 20%;
+      right: 40%;
+      background: var(--color-animate-purple);
+      box-shadow: 0 0 300px 300px var(--color-animate-purple);
+      opacity: .5;
+      animation: animate_style5_purple 20s infinite ease-in-out;
+    }
+    &:after {
+      display: none;
+    }
+  }
+  &.style6 {
+    &:before {
+      top: 20%;
+      left: 40%;
+      background: var(--color-animate-green);
+      box-shadow: 0 0 140px 140px var(--color-animate-green);
+      opacity: .5;
+      animation: animate_style6_green 12s infinite ease-in-out;
+    }
+    &:after {
+      top: 30%;
+      right: 20%;
+      background: var(--color-animate-purple);
+      box-shadow: 0 0 140px 140px var(--color-animate-purple);
+      opacity: .5;
+      animation: animate_style6_purple 20s infinite ease-in-out;
+    }
+  }
+  &.style7 {
+    @include media-max(md) { background-color: #5f718224; }
+    &:before {
+      top: 20%;
+      left: 20%;
+      background: var(--color-animate-green);
+      box-shadow: 0 0 150px 150px var(--color-animate-green);
+      opacity: .4;
+      animation: animate_style7_green 20s infinite ease-in-out;
+    }
+    &:after {
+      top: 10%;
+      right: 20%;
+      background: var(--color-animate-purple);
+      box-shadow: 0 0 200px 200px var(--color-animate-purple);
+      opacity: .4;
+      animation: animate_style7_purple 20s infinite ease-in-out;
+      @include media-max(md) {
+        top: auto;
+        bottom: 10%;
+      }
+    }
+  }
+  &.style8 {
+    &:before {
+      top: 10%;
+      right: 20%;
+      background: var(--color-animate-purple);
+      box-shadow: 0 0 120px 120px var(--color-animate-purple);
+      opacity: .3;
+      animation: animate_style8_purple 20s infinite ease-in-out;
+    }
+    &:after {
+      display: none;
+    }
+  }
+}
+
+
+
+@keyframes animate_style1_green {
+  0%,to {
+    top: 20%;
+    right: 10%;
+  }
+  33% {
+    top: 0;
+    right: 60%;
+  }
+  70% {
+    top: 80%;
+    right: 0;
+  }
+}
+
+@keyframes animate_style1_purple {
+  0%,to {
+    bottom: 20%;
+    right: 10%;
+  }
+  33% {
+    bottom: 60%;
+    right: 0;
+  }
+  70% {
+    bottom: -20%;
+    right: 40%;
+  }
+}
+
+@keyframes animate_style2_green {
+  0%,to {
+    top: 5%;
+    left: 5%;
+  }
+  33% {
+    top: 53%;
+    left: 33%;
+  }
+  70% {
+    top: 73%;
+    left: 53%;
+  }
+}
+
+@keyframes animate_style2_purple {
+  0% {
+    top: 70%;
+    left: 20%;
+  }
+  33% {
+    top: 48%;
+    right: 68%;
+  }
+  70% {
+    top: 0;
+    right: 68%;
+  }
+  to {
+    top: 30%;
+    right: 20%;
+  }
+}
+
+@keyframes animate_style3_purple {
+  0%, 100% {
+    bottom: 10%;
+    left: 10%;
+  }
+  33% {
+    bottom: 80%;
+    left: 70%;
+  }
+  70% {
+    bottom: -10%;
+    left: 40%;
+  }
+}
+
+@keyframes animate_style4_green {
+  0%, 100% {
+    left: 50%;
+    top: 20%;
+  }
+  33% {
+    left: 0;
+    top: 80%;
+  }
+  70% {
+    left: -10%;
+    top: 0;
+  }
+}
+
+@keyframes animate_style4_purple {
+  0%, 100% {
+    bottom: 20%;
+    right: 40%;
+  }
+  33% {
+    bottom: 80%;
+    right: 90%;
+  }
+  70% {
+    bottom: 0;
+    right: 50%;
+  }
+}
+
+@keyframes animate_style5_purple {
+  0%, 100% {
+    bottom: 20%;
+    right: 40%;
+  }
+  33% {
+    bottom: 80%;
+    right: 90%;
+  }
+  70% {
+    bottom: 0;
+    right: 50%;
+  }
+}
+
+@keyframes animate_style6_green {
+  0%, 100% {
+    left: 50%;
+    top: 20%;
+  }
+  33% {
+    left: 0;
+    top: 80%;
+  }
+  70% {
+    left: -10%;
+    top: 0;
+  }
+}
+
+@keyframes animate_style6_purple {
+  0%, 100% {
+    bottom: 20%;
+    right: 40%;
+  }
+  33% {
+    bottom: 80%;
+    right: 90%;
+  }
+  70% {
+    bottom: 0;
+    right: 50%;
+  }
+}
+
+@keyframes animate_style7_green {
+  0% {
+    top: 20%;
+    left: 40%;
+  }
+  33% {
+    left: 46%;
+  }
+  70% {
+    top: 80%;
+    left: 80%;
+  }
+  100% {
+    top: 20%;
+    left: 20%;
+  }
+}
+
+@keyframes animate_style7_purple {
+  0%, 100% {
+    top: 10%;
+    right: 20%;
+  }
+  33% {
+    right: 46%;
+  }
+  70% {
+    top: 80%;
+    right: 80%;
+  }
+}
+
+@keyframes animate_style8_purple {
+  0%, 100% {
+    top: 10%;
+    right: 20%;
+  }
+  33% {
+    right: 46%;
+  }
+  70% {
+    top: 80%;
+    right: 80%;
+  }
+}

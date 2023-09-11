@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+  <title>Главная</title>
+  <link rel="stylesheet" href="theme/css/app.min.css?dev=31aug">
+</head>
+
+<body>
+<section class="loader" data-loader>
+  <div class="logo">
+    <img src="theme/img/logo_gray.svg" alt="">
+    <img src="theme/img/logo.svg" alt="">
+  </div>
+</section>
+
+<div class="app main_page">
+  <header class="main" data-header>
+  <div class="wrap">
+    <a href="main.html" class="logo"><img src="theme/img/logo.svg" alt=""></a>
+    <ul class="nav">
+      <li class="sub">
+        <a href="#">О нас <span></span></a>
+        <ul>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Карьера</a></li>
+        </ul>
+      </li>
+      <li class="sub">
+        <a href="#">Каталог <span></span></a>
+        <ul>
+          <li><a href="#">Медицинские изделия</a></li>
+          <li><a href="#">Лекарственные средства</a></li>
+          <li><a href="#">Косметическая продукция</a></li>
+          <li><a href="#">Линейки косметических средств</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Контрактное производство</a></li>
+      <li><a href="#">Фармаконадзор</a></li>
+      <li><a href="#">Где купить</a></li>
+      <!-- <li><a href="#">Новости</a></li> -->
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <ul class="info">
+      <li>
+        <button class="search" type="button" data-modal-triger="search">
+          <svg><use xlink:href="theme/img/sprite.svg#search"></use></svg>
+        </button>
+      </li>
+      <!-- <li><button class="lang" type="button">Рус</button></li> -->
+      <li><a href="#" class="phone">+7 495 504-25-50</a></li>
+    </ul>
+    <button class="nav-switcher">Показать/крыть меню</button>
+    <div class="header-contacts">
+      <a href="#" class="phone">+7 495 504-25-50</a>
+      <ul class="social">
+        <li>
+          <a href="">
+            <svg><use xlink:href="theme/img/sprite.svg#telegram"></use></svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg><use xlink:href="theme/img/sprite.svg#vk"></use></svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg><use xlink:href="theme/img/sprite.svg#ok"></use></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+  <main class="wrap content">
+    <section class="block1 bganimation style1">
+  <div class="item gallerywithnav">
+    <div class="swiper main br" data-swiper="main">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="box">
+            <button type="button" data-video-btn>
+              <svg><use xlink:href="theme/img/sprite.svg#out_fullscreen"></use></svg>
+              <svg><use xlink:href="theme/img/sprite.svg#in_fullscreen"></use></svg>
+            </button>
+            <video src="videos/main/s1/video.mp4" preload="metadata" playsinline loop autoplay muted></video>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="img/main/s1/slide1.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="img/main/s1/slide2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper thumb br" data-swiper="main_thumb">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <h3>Зеленая дубрава</h3>
+          <div class="desc">ведущий российский производитель лекарственных средств, медицинских изделий из нативного коллагена и косметической продукции с научным подходом</div>
+          <a href="" class="btn blue h40 p24 fs12 fw700">Подробнее</a>
+        </div>
+        <div class="swiper-slide">
+          <h3>Косметика PharmLevel</h3>
+          <div class="desc">Косметика для красоты и здоровья кожи и волос, созданная экспертами в области фармации</div>
+          <a href="" class="btn blue h40 p24 fs12 fw700">Подробнее</a>
+        </div>
+        <div class="swiper-slide">
+          <h3>Лекарственные средства</h3>
+          <div class="desc">Популярные дженерики и препараты по уникальным рецептурам для различных нозологий</div>
+          <a href="" class="btn blue h40 p24 fs12 fw700">Подробнее</a>
+        </div>
+      </div>
+      <div class="swipernavs">
+        <button class="main_thumb_prev" type="button">
+          <svg><use xlink:href="theme/img/sprite.svg#arrow_slider"></use></svg>
+        </button>
+        <button class="main_thumb_next" type="button">
+          <svg><use xlink:href="theme/img/sprite.svg#arrow_slider"></use></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <a href="" class="br">
+      <div class="gallery">
+        <div class="swiper" data-swiper="main_side">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/main/s1/side1.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/main/s1/side2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="h3">Каталог<br>продукции</div>
+        <img src="img/main/icons/s1/1.svg" alt="">
+      </div>
+    </a>
+    <a href="" class="br">
+      <div class="gallery">
+        <div class="swiper" data-swiper="main_side">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/main/s1/side1.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/main/s1/side2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="h3">Контрактное<br>производство</div>
+        <img src="img/main/icons/s1/2.svg" alt="">
+      </div>
+    </a>
+  </div>
+</section>
+
+    <section class="block2 br" data-aos="fade-up">
+  <div class="h1">Мы в цифрах</div>
+  <ul>
+    <li>
+      <div class="label">История</div>
+      <div class="number">с <span data-count="1998" data-step="10" data-speed="2" data-aos>1998</span></div>
+      <div class="desc">года на&nbsp;рынке косметики и&nbsp;фармацевтики</div>
+    </li>
+    <li>
+      <div class="label">Портфель</div>
+      <div class="number"><span data-count="1000" data-step="10" data-speed="2" data-aos>1000</span>+</div>
+      <div class="desc">готовых рецептур</div>
+    </li>
+    <li>
+      <div class="label">Мощность</div>
+      <div class="number"><span data-count="60" data-speed="10" data-aos>60</span> млн+</div>
+      <div class="desc">продукции в&nbsp;год</div>
+    </li>
+    <li>
+      <div class="label">Сотрудники</div>
+      <div class="number"><span data-count="500" data-step="10" data-speed="10" data-aos>500</span>+</div>
+      <div class="desc">сотрудников</div>
+    </li>
+  </ul>
+</section>
+
+    <div class="bganimation style2">
+      <section class="block3" data-aos="fade-up">
+  <div class="item h1">
+    Здоровье, красота, забота&nbsp;&mdash;
+    наша работа!
+  </div>
+  <div class="item text">
+    Мы создаем
+    <b>современные и востребованные </b>
+    лекарственные средства, медицинские изделия и косметическую продукцию для красоты, здоровья и улучшения качества жизни людей!
+  </div>
+</section>
+
+      <section class="block4" data-aos="fade-up">
+  <div class="swiper main br" data-swiper="card">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide br">
+        <img src="img/main/icons/s4/1.svg" alt="">
+        <h3>Контроль качества GMP И ISO 9001:2015</h3>
+        <div class="desc">на каждом этапе производства</div>
+      </div>
+      <div class="swiper-slide br">
+        <img src="img/main/icons/s4/2.svg" alt="">
+        <h3>Контрактное производство</h3>
+        <div class="desc">лекарственных средств, косметической продукции и&nbsp;медицинских изделий</div>
+      </div>
+      <div class="swiper-slide br">
+        <img src="img/main/icons/s4/3.svg" alt="">
+        <h3>Лаборатория инноваций</h3>
+        <div class="desc">разработка и&nbsp;тестирование современных эксклюзивных рецептур</div>
+      </div>
+      <div class="swiper-slide br">
+        <img src="img/main/icons/s4/4.svg" alt="">
+        <h3>Доказанная эффективность</h3>
+        <div class="desc">клиническими исследованиями под&nbsp;контролем экспертов</div>
+      </div>
+      <div class="swiper-slide br">
+        <img src="img/main/icons/s4/1.svg" alt="">
+        <h3>Контроль качества GMP И ISO 9001:2015 2</h3>
+        <div class="desc">на каждом этапе производства</div>
+      </div>
+      <div class="swiper-slide br">
+        <img src="img/main/icons/s4/2.svg" alt="">
+        <h3>Контрактное производство 2</h3>
+        <div class="desc">лекарственных средств, косметической продукции и медицинских изделий</div>
+      </div>
+      <div class="swiper-slide br">
+        <img src="img/main/icons/s4/3.svg" alt="">
+        <h3>Лаборатория инноваций 2</h3>
+        <div class="desc">разработка и&nbsp;тестирование современных эксклюзивных рецептур</div>
+      </div>
+      <div class="swiper-slide br">
+        <img src="img/main/icons/s4/4.svg" alt="">
+        <h3>Доказанная эффективность 2</h3>
+        <div class="desc">клиническими исследованиями под&nbsp;контролем экспертов</div>
+      </div>
+      <div class="swiper-slide br">
+        <img src="img/main/icons/s4/1.svg" alt="">
+        <h3>Контроль качества GMP И ISO 9001:2015 3</h3>
+        <div class="desc">на каждом этапе производства</div>
+      </div>
+      <div class="swiper-slide br">
+        <img src="img/main/icons/s4/2.svg" alt="">
+        <h3>Контрактное производство 3</h3>
+        <div class="desc">лекарственных средств, косметической продукции и&nbsp;медицинских изделий</div>
+      </div>
+      <div class="swiper-slide br">
+        <img src="img/main/icons/s4/3.svg" alt="">
+        <h3>Лаборатория инноваций 3</h3>
+        <div class="desc">разработка и тестирование современных эксклюзивных рецептур</div>
+      </div>
+      <div class="swiper-slide br">
+        <img src="img/main/icons/s4/4.svg" alt="">
+        <h3>Доказанная эффективность 3</h3>
+        <div class="desc">клиническими исследованиями под&nbsp;контролем экспертов</div>
+      </div>
+    </div>
+    <div class="actions pt30">
+      <div class="swipernavs">
+        <button class="card_prev" type="button">
+          <svg><use xlink:href="theme/img/sprite.svg#arrow_slider"></use></svg>
+        </button>
+        <button class="card_next" type="button">
+          <svg><use xlink:href="theme/img/sprite.svg#arrow_slider"></use></svg>
+        </button>
+      </div>
+      <a href="" class="btn transparent-gray h50 p32 fs16 fw700">Подробнее</a>
+    </div>
+  </div>
+</section>
+
+    </div>
+    <section class="block5 bganimation style3" data-aos="fade-up">
+  <ul>
+    <li>
+      <a href="#" class="br">
+        <img src="img/main/s5/1.png" alt="">
+        <span class="h3">Лекарственные <br>средства</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="br">
+        <img src="img/main/s5/2.png" alt="">
+        <span class="h3">Медицинские <br>изделия</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="br">
+        <img src="img/main/s5/3.png" alt="">
+        <span class="h3">Косметическая <br>продукция</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+    <section class="block6" data-aos="fade-up">
+  <div class="item">
+    <div class="h1">Контрактное производство</div>
+    <div class="text">Мы производим лекарственные средства, косметическую продукцию и медицинские изделия “под ключ”: <b>от разработки рецептур до производства готовой продукции</b></div>
+    <button class="btn blue h50 p32 mt48 fs16 fw600" type="button" data-modal-triger="feedback">Оставить заявку</button>
+    <div class="flask" data-animation-flask>
+      <img src="theme/img/flask.png" alt="">
+      <div class="filter" data-animation-flask-trigger>
+        <div class="fill" data-animation-flask-fill>
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+            </defs>
+            <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="#2E8647"></use>
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="#2E8647"></use>
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="#2E8647"></use>
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#2E8647"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="bganimation style4" aria-label="animation"></div>
+  </div>
+  <div class="item">
+    <div class="h2">Почему выбирают нас</div>
+    <ul class="pt64">
+      <li>
+        <div class="blurico">
+          <div class="box">
+            <span aria-label="ico"></span>
+            <img src="img/main/icons/s6/1.svg" alt="">
+          </div>
+        </div>
+        <div class="info">
+          <h3>Выгодное сотрудничество</h3>
+          <div class="desc">Предложим самый оптимальный и выгодный для вас вариант сотрудничества. Вместе с вами сформируем ТЗ на разработку продукта и согласуем план работ, необходимых для успешной реализации проекта</div>
+        </div>
+      </li>
+      <li>
+        <div class="blurico">
+          <div class="box">
+            <span aria-label="ico"></span>
+            <img src="img/main/icons/s6/2.svg" alt="">
+          </div>
+        </div>
+        <div class="info">
+          <h3>Банк готовых рецептур</h3>
+          <div class="desc">Разработаем индивидуальные или&nbsp;доработаем составы из&nbsp;каталога готовых рецептур&nbsp;&mdash; лекарственных средств, косметической продукции и&nbsp;медицинских изделий</div>
+        </div>
+      </li>
+      <li>
+        <div class="blurico">
+          <div class="box">
+            <span aria-label="ico"></span>
+            <img src="img/main/icons/s6/3.svg" alt="">
+          </div>
+        </div>
+        <div class="info">
+          <h3>Опыт и экспертиза</h3>
+          <div class="desc">Высокотехнологичное производство и&nbsp;квалифицированные специалисты в&nbsp;команде позволяют обеспечивать высокий уровень экспертизы на&nbsp;каждом этапе производства</div>
+        </div>
+      </li>
+      <li>
+        <div class="blurico">
+          <div class="box">
+            <span aria-label="ico"></span>
+            <img src="img/main/icons/s6/4.svg" alt="">
+          </div>
+        </div>
+        <div class="info">
+          <h3>Производство «под ключ»</h3>
+          <div class="desc">Обеспечим полный технологический цикл: от&nbsp;разработки рецептур, подбора упаковки и&nbsp;сертификации продукции до&nbsp;производства, фасовки, хранения и&nbsp;отправки на&nbsp;склад заказчика</div>
+        </div>
+      </li>
+      <li>
+        <div class="blurico">
+          <div class="box">
+            <span aria-label="ico"></span>
+            <img src="img/main/icons/s6/5.svg" alt="">
+          </div>
+        </div>
+        <div class="info">
+          <h3>Сертификация и регистрация</h3>
+          <div class="desc">Сформируем комплект документов и&nbsp;проведем весь необходимый комплекс работ для&nbsp;сертификации / регистрации продукта в&nbsp;строгом соответствии со&nbsp;всеми требованиями законодательства РФ и ЕАЭС</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="block7" data-aos="fade-up">
+  <ul>
+    <li class="item br bganimation style5">
+      <div class="h1">Производство коллагеновых продуктов</div>
+      <div class="text">Мы производим медицинские изделия и&nbsp;косметическую продукцию на&nbsp;основе нативного трехспирального коллагена I&nbsp;типа методом лиофилизации</div>
+      <a href="" class="btn white h50 p32 fs16 fw600">Подробнее</a>
+    </li>
+    <li class="item br">
+      <video src="videos/main/s6/video.mp4" preload="metadata" playsinline loop autoplay muted></video>
+    </li>
+  </ul>
+</section>
+
+    <section class="block8" data-aos="fade-up">
+  <div class="h1">Новости</div>
+  <div class="swiper" data-swiper="news">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#" class="br">
+          <span class="img br">
+            <img src="img/main/s8/1.jpg" alt="">
+          </span>
+          <span class="info">
+            <span class="date">11 апреля 2023</span>
+            <h3>Первая фармацевтическая субстанция производства ЗАО «Зеленая дубрава» включена в государственный реестр ЛС</h3>
+            <span class="desc">Министерством здравоохранения Российской Федерации по результатам проведенной экспертизы принято решение о включении фармацевтической субстанции "Коллаген" производства ЗАО "Зеленая дубрава" в государственный реестр лекарственных средств.</span>
+          </span>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <ul>
+          <li>
+            <a href="#" class="br">
+              <span class="img br">
+                <img src="img/main/s8/2.jpg" alt="">
+              </span>
+              <span class="info">
+                <span class="date">24 марта 2023</span>
+                <h3>В эфире телеканала Вечерний Дмитров вышел сюжет, посвященный ЗАО «Зеленая дубрава»</h3>
+                <span class="desc">Заместитель генерального директора по производству Юлия Любимова рассказала о новинках производства лекарственных средств, косметической продукции, коллагеновых медицинских изделий</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="br">
+              <span class="img br">
+                <img src="img/main/s8/3.jpg" alt="">
+              </span>
+              <span class="info">
+                <span class="date">2 марта 2023</span>
+                <h3>Фармацевтическая конференция "Зеленый Крест"</h3>
+                <span class="desc">Компания Зеленая дубрава приняла участие в IX фармацевтической конференции «Зеленый Крест», состоявшейся 28 февраля в Москве.</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" class="br">
+          <span class="img br">
+            <img src="img/main/s8/1.jpg" alt="">
+          </span>
+          <span class="info">
+            <span class="date">11 апреля 2023</span>
+            <h3>Первая фармацевтическая субстанция производства ЗАО «Зеленая дубрава» включена в государственный реестр ЛС</h3>
+            <span class="desc">Министерством здравоохранения Российской Федерации по результатам проведенной экспертизы принято решение о включении фармацевтической субстанции "Коллаген" производства ЗАО "Зеленая дубрава" в государственный реестр лекарственных средств.</span>
+          </span>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <ul>
+          <li>
+            <a href="#" class="br">
+              <span class="img br">
+                <img src="img/main/s8/2.jpg" alt="">
+              </span>
+              <span class="info">
+                <span class="date">24 марта 2023</span>
+                <h3>В эфире телеканала Вечерний Дмитров вышел сюжет, посвященный ЗАО «Зеленая дубрава»</h3>
+                <span class="desc">Заместитель генерального директора по производству Юлия Любимова рассказала о новинках производства лекарственных средств, косметической продукции, коллагеновых медицинских изделий</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="br">
+              <span class="img br">
+                <img src="img/main/s8/3.jpg" alt="">
+              </span>
+              <span class="info">
+                <span class="date">2 марта 2023</span>
+                <h3>Фармацевтическая конференция "Зеленый Крест"</h3>
+                <span class="desc">Компания Зеленая дубрава приняла участие в IX фармацевтической конференции «Зеленый Крест», состоявшейся 28 февраля в Москве.</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" class="br">
+          <span class="img br">
+            <img src="img/main/s8/1.jpg" alt="">
+          </span>
+          <span class="info">
+            <span class="date">11 апреля 2023</span>
+            <h3>Первая фармацевтическая субстанция производства ЗАО «Зеленая дубрава» включена в государственный реестр ЛС</h3>
+            <span class="desc">Министерством здравоохранения Российской Федерации по результатам проведенной экспертизы принято решение о включении фармацевтической субстанции "Коллаген" производства ЗАО "Зеленая дубрава" в государственный реестр лекарственных средств.</span>
+          </span>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <ul>
+          <li>
+            <a href="#" class="br">
+              <span class="img br">
+                <img src="img/main/s8/2.jpg" alt="">
+              </span>
+              <span class="info">
+                <span class="date">24 марта 2023</span>
+                <h3>В эфире телеканала Вечерний Дмитров вышел сюжет, посвященный ЗАО «Зеленая дубрава»</h3>
+                <span class="desc">Заместитель генерального директора по производству Юлия Любимова рассказала о новинках производства лекарственных средств, косметической продукции, коллагеновых медицинских изделий</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="br">
+              <span class="img br">
+                <img src="img/main/s8/3.jpg" alt="">
+              </span>
+              <span class="info">
+                <span class="date">2 марта 2023</span>
+                <h3>Фармацевтическая конференция "Зеленый Крест"</h3>
+                <span class="desc">Компания Зеленая дубрава приняла участие в IX фармацевтической конференции «Зеленый Крест», состоявшейся 28 февраля в Москве.</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" class="br">
+          <span class="img br">
+            <img src="img/main/s8/1.jpg" alt="">
+          </span>
+          <span class="info">
+            <span class="date">11 апреля 2023</span>
+            <h3>Первая фармацевтическая субстанция производства ЗАО «Зеленая дубрава» включена в государственный реестр ЛС</h3>
+            <span class="desc">Министерством здравоохранения Российской Федерации по результатам проведенной экспертизы принято решение о включении фармацевтической субстанции "Коллаген" производства ЗАО "Зеленая дубрава" в государственный реестр лекарственных средств.</span>
+          </span>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <ul>
+          <li>
+            <a href="#" class="br">
+              <span class="img br">
+                <img src="img/main/s8/2.jpg" alt="">
+              </span>
+              <span class="info">
+                <span class="date">24 марта 2023</span>
+                <h3>В эфире телеканала Вечерний Дмитров вышел сюжет, посвященный ЗАО «Зеленая дубрава»</h3>
+                <span class="desc">Заместитель генерального директора по производству Юлия Любимова рассказала о новинках производства лекарственных средств, косметической продукции, коллагеновых медицинских изделий</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="br">
+              <span class="img br">
+                <img src="img/main/s8/3.jpg" alt="">
+              </span>
+              <span class="info">
+                <span class="date">2 марта 2023</span>
+                <h3>Фармацевтическая конференция "Зеленый Крест"</h3>
+                <span class="desc">Компания Зеленая дубрава приняла участие в IX фармацевтической конференции «Зеленый Крест», состоявшейся 28 февраля в Москве.</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" class="br">
+          <span class="img br">
+            <img src="img/main/s8/1.jpg" alt="">
+          </span>
+          <span class="info">
+            <span class="date">11 апреля 2023</span>
+            <h3>Первая фармацевтическая субстанция производства ЗАО «Зеленая дубрава» включена в государственный реестр ЛС</h3>
+            <span class="desc">Министерством здравоохранения Российской Федерации по результатам проведенной экспертизы принято решение о включении фармацевтической субстанции "Коллаген" производства ЗАО "Зеленая дубрава" в государственный реестр лекарственных средств.</span>
+          </span>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <ul>
+          <li>
+            <a href="#" class="br">
+              <span class="img br">
+                <img src="img/main/s8/2.jpg" alt="">
+              </span>
+              <span class="info">
+                <span class="date">24 марта 2023</span>
+                <h3>В эфире телеканала Вечерний Дмитров вышел сюжет, посвященный ЗАО «Зеленая дубрава»</h3>
+                <span class="desc">Заместитель генерального директора по производству Юлия Любимова рассказала о новинках производства лекарственных средств, косметической продукции, коллагеновых медицинских изделий</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="br">
+              <span class="img br">
+                <img src="img/main/s8/3.jpg" alt="">
+              </span>
+              <span class="info">
+                <span class="date">2 марта 2023</span>
+                <h3>Фармацевтическая конференция "Зеленый Крест"</h3>
+                <span class="desc">Компания Зеленая дубрава приняла участие в IX фармацевтической конференции «Зеленый Крест», состоявшейся 28 февраля в Москве.</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="actions">
+      <div class="swipernavs">
+        <button class="news_prev" type="button">
+          <svg><use xlink:href="theme/img/sprite.svg#arrow_slider"></use></svg>
+        </button>
+        <button class="news_next" type="button">
+          <svg><use xlink:href="theme/img/sprite.svg#arrow_slider"></use></svg>
+        </button>
+      </div>
+      <a href="#" class="btn transparent-gray h50 p32 fs16 fw700">Все новости</a>
+    </div>
+  </div>
+</section>
+
+    <section class="block9 bganimation style6" data-aos="fade-up">
+  <div class="h1">Наши партнеры</div>
+  <ul>
+    <li class="br"><img src="img/main/s9/1.png" alt=""></li>
+    <li class="br"><img src="img/main/s9/2.png" alt=""></li>
+    <li class="br"><img src="img/main/s9/3.png" alt=""></li>
+    <li class="br"><img src="img/main/s9/4.png" alt=""></li>
+    <li class="br"><img src="img/main/s9/5.png" alt=""></li>
+    <li class="br"><img src="img/main/s9/6.png" alt=""></li>
+    <li class="br"><img src="img/main/s9/7.png" alt=""></li>
+    <li class="br"><img src="img/main/s9/8.png" alt=""></li>
+    <li class="br"><img src="img/main/s9/9.png" alt=""></li>
+    <li class="br"><img src="img/main/s9/10.png" alt=""></li>
+  </ul>
+</section>
+
+    <section class="block10 br bganimation style7" data-aos="fade-up">
+  <div class="item">
+    <div class="h1">Где купить?</div>
+    <div class="text">
+      <p>Вы можете приобрести нашу продукцию в&nbsp;розничных и&nbsp;интернет-магазинах: WILDBERRIES, Ozon, Yandex Market, Eapteka, Apteka.ru, 36.6 и&nbsp;другие.</p>
+      <p>Также Вы можете стать нашим официальным партнером&nbsp;&mdash; мы&nbsp;будем очень рады совместному сотрудничеству.</p>
+    </div>
+    <a href="" class="btn transparent-dark h50 p32 fs16 fw700">Подробнее</a>
+  </div>
+  <div class="item">
+    <ul>
+      <li><a href="" class="h3">Лекарственные <br>средства</a></li>
+      <li><a href="" class="h3">Медицинские <br>изделия</a></li>
+      <li><a href="" class="h3">Косметическая <br>продукция</a></li>
+    </ul>
+  </div>
+  <img src="theme/img/bottle.webp" alt="" data-animation-bottle>
+</section>
+
+  </main>
+  <footer class="wrap main">
+  <div class="item">
+    <a href="/" class="logo"><img src="theme/img/logo.svg" alt=""></a>
+    <div class="desc">141801, Московская область, г. Дмитров, <br>ул. Профессиональная, д. 151.</div>
+    <div class="small">© 2023 ЗАО «Зеленая дубрава»</div>
+  </div>
+  <div class="item">
+    <ul>
+      <li><a href="#">О компании</a></li>
+      <li><a href="#">Лекарственные средства</a></li>
+      <li><a href="#">Медицинские изделия</a></li>
+      <li><a href="#">Косметическая продукция</a></li>
+      <li><a href="#">Коллагеновая продукция</a></li>
+      <li><a href="#">Контрактное производство</a></li>
+      <li><a href="#">Фармаконадзор</a></li>
+      <li><a href="#">Новости</a></li>
+      <li><a href="#">Где купить?</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <a href="#" class="small">Политика конфиденциальности</a>
+  </div>
+  <div class="item">
+    <a href="tel:+74955042550" class="phone h2">+7 495 504-25-50</a>
+    <a href="mailto:info@mazi.ru" class="email h2">info@mazi.ru</a>
+    <ul>
+      <li>
+        <a href="#">
+          <svg><use xlink:href="theme/img/sprite.svg#telegram"></use></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <svg><use xlink:href="theme/img/sprite.svg#vk"></use></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <svg><use xlink:href="theme/img/sprite.svg#ok"></use></svg>
+        </a>
+      </li>
+    </ul>
+    <div class="copy-mobile">
+      <div class="small">© 2023 ЗАО «Зеленая дубрава»</div>
+      <a href="#" class="small">Политика конфиденциальности</a>
+    </div>
+    <a href="#" class="created small">
+      <span>Создание сайтов — </span>
+      <svg><use xlink:href="theme/img/sprite.svg#created"></use></svg>
+    </a>
+  </div>
+</footer>
+
+</div>
+<div class="modal modalbox" data-modal-target="feedback" data-modal-triger="feedback">
+  <div class="window">
+    <button class="close" type="button" data-modal-triger="feedback"></button>
+    <div class="h2">Оставьте заявку</div>
+    <div class="text">Менеджер свяжется с вами и ответит на все интересующие вопросы.</div>
+    <form action="" validate>
+      <div class="items">
+        <div class="item">
+          <div class="fieldset">
+            <div class="field">
+              <label for="">Ваше имя *</label>
+              <input type="text" placeholder="Иванов Иван Иванович" data-validate="text">
+            </div>
+            <div class="field">
+              <label for="">Ваш email *</label>
+              <input type="text" placeholder="Иванов Иван Иванович" data-validate="text">
+            </div>
+            <div class="field">
+              <label for="">Номер телефона *</label>
+              <input type="text" placeholder="+7 (ххх) ххх-хх-хх" data-validate="text" data-mask="phone">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="fieldset">
+            <div class="field">
+              <label for="">Ваш комментарий/вопрос *</label>
+              <textarea name="" id="" placeholder="Поле ввода" data-validate="text"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="field accept">
+        <input type="checkbox" id="feedback" name="gender" checked="">
+        <label for="feedback">Нажимая кнопку «Отправить», я даю согласие на обработку моих персональных данных</label>
+      </div>
+      <button class="btn greenfill h50 p32 fs16 fw600" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
+
+<div class="modal modalbox" data-modal-target="feedback_success" data-modal-triger="feedback_success">
+  <div class="window">
+    <button class="close" type="button" data-modal-triger="feedback_success"></button>
+    <div class="h2">Спасибо! Ваша форма успешно отправлена!</div>
+    <div class="text">Скоро менеджер свяжется с вами и ответит на все интересующие вопросы.</div>
+  </div>
+</div>
+
+<div class="modal modalbox" data-modal-target="feedback_error" data-modal-triger="feedback_error">
+  <div class="window">
+    <button class="close" type="button" data-modal-triger="feedback_error"></button>
+    <div class="h2">Что-то пошло не так.</div>
+    <div class="text">Произошла ошибка, пожалуйста, обновите страницу и заполните форму ещё раз.</div>
+  </div>
+</div>
+
+<div class="modal modalbox modalbox_trans" data-modal-target="search" data-modal-triger="search">
+  <div class="search-window">
+    <form id="searchForm" class="search-window-form" action="search_result.html">
+      <input id="searchField" class="search__field" type="text" placeholder="Начните поиск">
+      <button class="search__btn" type="submit">
+        <svg><use xlink:href="theme/img/sprite.svg#arrow_search"></use></svg>
+      </button>
+    </form>
+    <ul class="search-suggest">
+    </ul>
+    <div class="search-empty">По вашему запросу ничего не найдено. Попробуйте другой запрос</div>
+    <template id="suggestItem">
+      <li class="search-suggest__item">
+        <a href="#"></a>
+      </li>
+    </template>
+  </div>
+</div>
+<script src="theme/js/lodash.min.js"></script>
+<script>
+  const API_SEARCH_URL = '/api/search';  // or 'https://domain.ru/api/search'
+  const searchWindow = document.querySelector('.search-window');
+  const searchEmpty = searchWindow.querySelector('.search-empty');
+  const templateSuggestItem = searchWindow.querySelector('#suggestItem');
+  const searchField = searchWindow.querySelector('#searchField');
+  const searchSuggest = searchWindow.querySelector('.search-suggest');
+  const searchInputHandler = _.debounce(({ currentTarget }) => {
+    const searchString = searchField.value;
+    if (searchString.length > 1) {
+      searchSuggest.innerHTML = '';
+      const searchParam = new URLSearchParams({ searchString });
+      fetch(`${API_SEARCH_URL}?${searchParam}`).then((resp) => resp.json()).then(({ data }) => {
+        data.forEach(({ url, value }) => {
+          const suggestItem = templateSuggestItem.content.cloneNode(true);
+          const link = suggestItem.querySelector('a');
+          link.href = url;
+          link.innerHTML = value;
+          searchSuggest.append(suggestItem);
+        });
+        searchEmpty.style.display = 'none';
+      }).catch((err) => {
+        searchSuggest.innerHTML = '';
+        searchEmpty.style.display = 'block';
+      });
+    } else {
+      searchSuggest.innerHTML = '';
+      searchEmpty.style.display = 'block';
+    }
+  }, 250);
+  searchField.addEventListener('input', searchInputHandler);
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="theme/js/vendors.min.js"></script>
+<script src="theme/js/app.min.js?dev=31aug"></script>
+
+</body>
+</html>

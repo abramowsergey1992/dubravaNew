@@ -1,0 +1,45 @@
+section.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100Vw;
+  height: 100Vh;
+  background: var(--color-white);
+  visibility: visible;
+  opacity: 1;
+  z-index: 10000;
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .logo {
+    position: relative;
+    width: 160px;
+    height: 55px;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      &:last-child {
+        animation: logo_animation 2s infinite ease-in-out;
+      }
+    }
+  }
+}
+
+@keyframes logo_animation {
+  0% {
+    clip-path: inset(0 160px 0 0);
+  }
+  50% {
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 160px 0 0);
+  }
+}

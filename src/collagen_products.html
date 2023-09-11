@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('./components/head.tpl', {
+  pagetitle: 'Коллагеновые продукты',
+  file: 'collagen-products'
+})
+<body>
+@include('./components/loader.tpl')
+<div class="app collagen_products_page">
+  @include('./components/header.tpl')
+  <main class="wrap content">
+    @include('./components/breads.tpl', {
+      pagetitle: 'Коллагеновые продукты'
+    })
+    @include('./components/blocks/block25.tpl', {
+      block: 'collagen_products'
+    })
+    @include('./components/blocks/block12.tpl', {
+      block: 'collagen_products_video'
+    })
+    @include('./components/blocks/block13.tpl', {
+      block: 'collagen_products_1'
+    })
+    @include('./components/blocks/block26.tpl', {
+      block: 'collagen_products'
+    })
+    @include('./components/blocks/block27.tpl')
+    @include('./components/blocks/block28.tpl', {
+      block: 'collagen_products'
+    })
+    @include('./components/blocks/block12.tpl', {
+      block: 'collagen_products_article'
+    })
+    @include('./components/blocks/block13.tpl', {
+      block: 'collagen_products_2'
+    })
+    @include('./components/blocks/block29.tpl')
+    @include('./components/blocks/block13.tpl', {
+      block: 'collagen_products_3'
+    })
+  </main>
+  @include('./components/footer.tpl')
+</div>
+@include('./components/feedback.tpl')
+@include('./components/feedback_success.tpl')
+@include('./components/feedback_error.tpl')
+@include('./components/search.tpl')
+@include('./components/scripts.tpl')
+</body>
+</html>

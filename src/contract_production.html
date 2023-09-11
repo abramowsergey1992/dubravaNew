@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('./components/head.tpl', {
+  pagetitle: 'Контрактное производство',
+  file: 'contract-production'
+})
+<body>
+@include('./components/loader.tpl')
+<div class="app contract_production_page">
+  @include('./components/header.tpl')
+  <main class="wrap content">
+    @include('./components/breads.tpl', {
+      pagetitle: 'Контрактное производство'
+    })
+    @include('./components/blocks/block25.tpl', {
+      block: 'contract_production'
+    })
+    @include('./components/blocks/block28.tpl', {
+      block: 'contract_production'
+    })
+    @include('./components/blocks/block30.tpl')
+    @include('./components/blocks/block31.tpl')
+    <div class="bganimation style1">
+      @include('./components/blocks/block13.tpl', {
+        block: 'contract_production1'
+      })
+      @include('./components/blocks/block13.tpl', {
+        block: 'contract_production2'
+      })
+      @include('./components/blocks/block13.tpl', {
+        block: 'contract_production3'
+      })
+    </div>
+    @include('./components/blocks/block40.tpl')
+    @include('./components/blocks/block9.tpl')
+  </main>
+  @include('./components/footer.tpl')
+</div>
+@include('./components/feedback.tpl')
+@include('./components/feedback_success.tpl')
+@include('./components/feedback_error.tpl')
+@include('./components/search.tpl')
+@include('./components/scripts.tpl')
+</body>
+</html>

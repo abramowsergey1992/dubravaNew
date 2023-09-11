@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('./components/head.tpl', {
+  pagetitle: 'Каталог',
+  file: 'catalog'
+})
+<body>
+@include('./components/loader.tpl')
+<div class="app catalog_page">
+  @include('./components/header.tpl')
+  <main class="wrap content">
+    @include('./components/breads.tpl', {
+      pagetitle: 'Каталог'
+    })
+    @include('./components/blocks/block25.tpl', {
+      block: 'catalog'
+    })
+    @include('./components/blocks/block12.tpl', {
+      block: 'catalog'
+    })
+    @include('./components/blocks/block5.tpl')
+  </main>
+  @include('./components/footer.tpl')
+</div>
+@include('./components/search.tpl')
+@include('./components/scripts.tpl')
+</body>
+</html>

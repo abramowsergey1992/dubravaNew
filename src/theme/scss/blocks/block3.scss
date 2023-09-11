@@ -1,0 +1,25 @@
+.block3 {
+  margin: 110px 0 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(550px, 41%);
+  gap: 50px;
+  z-index: 1;
+
+  @include media-max(lg) {
+    margin-top: 50px;
+    display: block;
+  }
+
+  .text {
+    margin-top: 12px;
+    font-weight: 300;
+    letter-spacing: -0.1px;
+    font-size: 17px;
+
+    @include media-max(lg) { margin-top: 16px; }
+  }
+
+  .h1 { @include media-min(xl) { margin-right: 30%; } }
+
+}

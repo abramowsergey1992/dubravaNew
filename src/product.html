@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('./components/head.tpl', {
+  pagetitle: 'Карточка продукта',
+  file: 'product'
+})
+<body>
+@include('./components/loader.tpl')
+<div class="app product_page">
+  @include('./components/header.tpl', {
+    pagetitle: 'Карточка продукта'
+  })
+  <main class="wrap content">
+    @include('./components/breads.tpl', { pagetitle: 'Карточка продукта' })
+    @include('./components/blocks/block35.tpl')
+    @include('./components/blocks/block36.tpl')
+    @include('./components/blocks/block37.tpl')
+  </main>
+  @include('./components/footer.tpl')
+</div>
+@include('./components/search.tpl')
+@include('./components/scripts.tpl')
+</body>
+</html>

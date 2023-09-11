@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('./components/head.tpl', {
+  pagetitle: 'Результаты поиска'
+})
+<body>
+@include('./components/loader.tpl')
+<div class="app search_page">
+  @include('./components/header.tpl', {
+    pagetitle: 'Результаты поиска'
+  })
+  <main class="wrap content">
+    @include('./components/blocks/block42.tpl')
+  </main>
+  @include('./components/footer.tpl')
+</div>
+@include('./components/certificates.tpl')
+@include('./components/search.tpl')
+@include('./components/scripts.tpl')
+</body>
+</html>

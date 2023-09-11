@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('./components/head.tpl', {
+  pagetitle: 'Фармаконадзор',
+  file: 'pharmacovigilance'
+})
+<body>
+@include('./components/loader.tpl')
+<div class="app pharmacovigilance_page">
+  @include('./components/header.tpl')
+  <main class="wrap content">
+    @include('./components/breads.tpl', { pagetitle: 'Фармаконадзор' })
+    @include('./components/blocks/block11.tpl', {
+      block: 'pharmacovigilance'
+    })
+    @include('./components/blocks/block12.tpl', {
+      block: 'pharmacovigilance'
+    })
+    @include('./components/blocks/block13.tpl', {
+      block: 'pharmacovigilance'
+    })
+    @include('./components/blocks/block14.tpl')
+    @include('./components/blocks/block15.tpl')
+  </main>
+  @include('./components/footer.tpl')
+</div>
+@include('./components/search.tpl')
+@include('./components/scripts.tpl')
+</body>
+</html>

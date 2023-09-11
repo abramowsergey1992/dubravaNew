@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('./components/head.tpl', {
+  pagetitle: 'Главная',
+  file: 'main'
+})
+<body>
+@include('./components/loader.tpl')
+<div class="app main_page">
+  @include('./components/header.tpl')
+  <main class="wrap content">
+    @include('./components/blocks/block1.tpl')
+    @include('./components/blocks/block2.tpl')
+    <div class="bganimation style2">
+      @include('./components/blocks/block3.tpl')
+      @include('./components/blocks/block4.tpl')
+    </div>
+    @include('./components/blocks/block5.tpl')
+    @include('./components/blocks/block6.tpl')
+    @include('./components/blocks/block7.tpl')
+    @include('./components/blocks/block8.tpl')
+    @include('./components/blocks/block9.tpl')
+    @include('./components/blocks/block10.tpl')
+  </main>
+  @include('./components/footer.tpl')
+</div>
+@include('./components/feedback.tpl')
+@include('./components/feedback_success.tpl')
+@include('./components/feedback_error.tpl')
+@include('./components/search.tpl')
+@include('./components/scripts.tpl')
+</body>
+</html>

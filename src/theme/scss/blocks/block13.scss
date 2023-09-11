@@ -1,0 +1,114 @@
+.block13 {
+  position: relative;
+  background: var(--color-white-80);
+  z-index: 1;
+  .text {
+    padding: 60px 40px;
+    font-weight: 300;
+
+    @include media-max(md) { padding: 60px 16px 40px; }
+
+    &.p40 {
+      padding: 40px;
+
+      @include media-max(md) { padding: 40px 16px; }
+    }
+  }
+  ul {
+    &.grid {
+      display: grid;
+
+      @include media-max(md) { display: block; }
+
+      &.rows2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 60px 40px;
+
+        @include media-max(md) { padding: 30px 16px; }
+
+        li {
+          font-weight: 300;
+          line-height: 32px;
+        }
+      }
+      &.rows3 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 50px 30px;
+
+        li {
+          .desc {
+            padding: 0;
+          }
+          .value {
+            padding: 10px 0 0;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+  .article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media-max(md) { flex-direction: column; }
+
+    .info {
+      flex: 1 1 auto;
+      padding: 50px 40px;
+      line-height: 1.4;
+
+      @include media-max(md) { padding: 30px 16px; }
+
+      .h1 {
+        @include media-max(md) {
+          font-size: 22px;
+          line-height: 1.6;
+        }
+      }
+      .text {
+        padding: 30px 0 0;
+        font-weight: 300;
+
+        @include media-max(md) { font-size: 13px; }
+      }
+    }
+    img {
+      max-width: 26%;
+      min-width: 26%;
+      margin: 0 0 0 18px;
+
+      @include media-max(md) { max-width: 85%; }
+    }
+  }
+  .flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+    padding: 50px 40px;
+
+    @include media-max(lg) { flex-direction: column; }
+
+    .info {
+      flex: 1 1 auto;
+      .h2 {
+        padding: 0 0 20px;
+      }
+      *:last-child {
+        padding: 0;
+      }
+      p {
+        padding: 0 0 10px;
+      }
+      ul {
+        li {
+          padding: 0 0 10px;
+        }
+      }
+    }
+  }
+}

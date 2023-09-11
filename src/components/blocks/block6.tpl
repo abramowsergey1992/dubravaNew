@@ -25,7 +25,7 @@
   </div>
   <div class="item">
     <div class="h2">Почему выбирают нас</div>
-    <ul class="pt64">
+    <ul class="pt64 blurico-list">
       <li>
         <div class="blurico">
           <div class="box">

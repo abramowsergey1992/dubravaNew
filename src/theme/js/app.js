@@ -272,6 +272,9 @@ window.onload = () => {
 						768: {
 							slidesPerView: 2,
 						},
+						1300: {
+							slidesPerView: "auto",
+						},
 					},
 					spaceBetween: 16,
 					navigation: { nextEl: next, prevEl: prev },

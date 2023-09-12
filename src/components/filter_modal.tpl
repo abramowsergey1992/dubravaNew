@@ -8,7 +8,8 @@
 </div>
 <script>
   const form_filter = document.querySelector('#form_filter');
+  if(window.innerWidth<992){
   const wrapper = document.querySelector('.filter_modal');
   wrapper.innerHTML = '';
-  wrapper.append(form_filter);
+  wrapper.append(form_filter);}
 </script>

@@ -915,10 +915,28 @@ window.onload = () => {
 		});
 	}
 	// Selectbox
+
+	const selectboxs = Array.from(document.querySelectorAll(".selectbox"));
+	for (let i in selectboxs) {
+		console.log(selectboxs[i]);
+		document.addEventListener("click", function (e) {
+			let selectbox = selectboxs[i];
+			const target = e.target;
+			const its_selectbox =
+				target == selectbox || selectbox.contains(target);
+			if (!its_selectbox) {
+				selectbox.querySelector(".hiddenbox").classList.remove("open");
+				selectbox.querySelector("button").classList.remove("open");
+			} else {
+			}
+		});
+	}
+
 	const selectBtns = Array.from(document.querySelectorAll("[data-select]"));
 	for (let i in selectBtns) {
 		selectBtns[i].addEventListener("click", ({ target }) => {
 			target = getParentByNode(target, "BUTTON");
+
 			if (!target.classList.contains("open")) {
 				const active = document.querySelector("[data-select].open");
 				if (active) {

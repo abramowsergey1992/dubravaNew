@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
-@include('./components/head.tpl', {
-  pagetitle: 'Новость',
-  file: 'article'
-})
-<body>
-@include('./components/loader.tpl')
-<div class="app article_page">
-  @include('./components/header.tpl')
-  <main class="wrap content">
-    @include('./components/breads.tpl', {
-      pagetitle: 'Новость'
-    })
-    @include('./components/blocks/block25.tpl', {
-      block: 'article'
-    })
-    @include('./components/blocks/block39.tpl')
-  </main>
-  @include('./components/footer.tpl')
-</div>
-@include('./components/search.tpl')
-@include('./components/scripts.tpl')
-</body>
+	@include('./components/head.tpl', { pagetitle: 'Новость', file: 'article' })
+	<body>
+		@include('./components/loader.tpl')
+		<div class="app article_page">
+			@include('./components/header.tpl')
+			<main class="wrap content">
+				@include('./components/breads.tpl', { pagetitle: 'Новость' })
+				<div class="inner">
+					@include('./components/blocks/block25.tpl', { block:
+					'article' }) @include('./components/blocks/block39.tpl')
+				</div>
+			</main>
+			@include('./components/footer.tpl')
+		</div>
+		@include('./components/search.tpl') @include('./components/scripts.tpl')
+	</body>
 </html>

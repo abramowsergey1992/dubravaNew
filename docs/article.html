@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+	<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
   <title>Новость</title>
   <link rel="stylesheet" href="theme/css/app.min.css?dev=31aug">
 </head>
 
-<body>
-<section class="loader" data-loader>
+	<body>
+		<section class="loader" data-loader>
   <div class="logo">
     <img src="theme/img/logo_gray.svg" alt="">
     <img src="theme/img/logo.svg" alt="">
   </div>
 </section>
 
-<div class="app article_page">
-  <header class="main" data-header>
+		<div class="app article_page">
+			<header class="main" data-header>
   <div class="wrap">
     <a href="main.html" class="logo"><img src="theme/img/logo.svg" alt=""></a>
     <ul class="nav">
@@ -75,15 +75,16 @@
   </div>
 </header>
 
-  <main class="wrap content">
-    <section class="breads">
+			<main class="wrap content">
+				<section class="breads">
   <ul>
     <li><a href="">Главная</a></li>
     <li><span>Новость</span></li>
   </ul>
 </section>
 
-    <section class="block25">
+				<div class="inner">
+					<section class="block25">
   
   
   
@@ -95,8 +96,7 @@
     <h1>Комплексный подход к лечению ран различной этиологии в стационаре</h1>
   
 </section>
-
-    <section class="block39 bganimation style1" data-aos="fade-up">
+ <section class="block39 bganimation style1" data-aos="fade-up">
   <div class="mainimg br"><img src="img/article/1.jpg" alt=""></div>
   <div class="textbox">
     <p>6 сентября 2022 года в городе Иваново компания «Зелёная дубрава» приняла участие в межрегиональной научно-практической конференции «Комплексный подход к лечению ран различной этиологии в стационаре», проходившей при поддержке Минпромторга РФ, Департамента здравоохранения Ивановской области, научного профессионального медицинского общества «Раны и раневые инфекции», ФГАОУ ВО «Российский университет дружбы народов», НМИЦ хирургии им. А.В. Вишневского.</p>
@@ -120,8 +120,9 @@
   </div>
 </section>
 
-  </main>
-  <footer class="wrap main">
+				</div>
+			</main>
+			<footer class="wrap main">
   <div class="item">
     <a href="/" class="logo"><img src="theme/img/logo.svg" alt=""></a>
     <div class="desc">141801, Московская область, г. Дмитров, <br>ул. Профессиональная, д. 151.</div>
@@ -173,8 +174,8 @@
   </div>
 </footer>
 
-</div>
-<div class="modal modalbox modalbox_trans" data-modal-target="search" data-modal-triger="search">
+		</div>
+		<div class="modal modalbox modalbox_trans" data-modal-target="search" data-modal-triger="search">
   <div class="search-window">
     <form id="searchForm" class="search-window-form" action="search_result.html">
       <input id="searchField" class="search__field" type="text" placeholder="Начните поиск">
@@ -225,11 +226,10 @@
   }, 250);
   searchField.addEventListener('input', searchInputHandler);
 </script>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="theme/js/vendors.min.js"></script>
 <script src="theme/js/app.min.js?dev=31aug"></script>
 
-</body>
+	</body>
 </html>

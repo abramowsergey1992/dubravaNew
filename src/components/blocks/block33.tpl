@@ -1,7 +1,7 @@
 <section class="block33" data-aos="fade-up">
 
-  <button class="btn blue h50 p32 mt48 fs16 fw600" type="button" data-modal-triger="filter_modal">Фильтр</button>
-
+  <button  class="filter-open btn blue h50 p32 mt48 fs16 fw600" type="button" data-modal-triger="filter_modal">Фильтр</button>
+  
   <form id="form_filter" action="">
     <ul>
       <li>
@@ -152,7 +152,8 @@
           </div>
         </div>
       </li>
+      <li><button class="btn blue h50 p32 mt48 fs16 fw600" type="button" data-modal-triger="filter_modal">Применить</button></li>
     </ul>
-    <button class="btn blue h50 p32 mt48 fs16 fw600" type="button" data-modal-triger="filter_modal">Применить</button>
+    
   </form>
 </section>

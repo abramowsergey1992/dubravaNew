@@ -1340,6 +1340,10 @@ body {
     display: block;
     content: '';
 
+    @media(max-width:1200px) {
+      display: none;
+    }
+
   }
 
   .blurico {

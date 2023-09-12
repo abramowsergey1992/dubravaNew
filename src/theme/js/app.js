@@ -5,12 +5,10 @@ navSwitcher.addEventListener("click", () => {
 	mainNav.classList.toggle("nav--active");
 	document.body.classList.toggle("overflow");
 });
-const mainNavLinksSub = mainNav.querySelectorAll(".sub span");
+const mainNavLinksSub = mainNav.querySelectorAll(".sub>a");
 mainNavLinksSub.forEach((li) => {
 	li.addEventListener("click", (evt) => {
-		evt.currentTarget.parentElement.parentElement.classList.toggle(
-			"active"
-		);
+		evt.currentTarget.parentElement.classList.toggle("active");
 	});
 });
 if (document.querySelector("#contact-map")) {

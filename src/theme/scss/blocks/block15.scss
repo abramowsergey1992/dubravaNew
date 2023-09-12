@@ -1,12 +1,17 @@
 .block15 {
 
-  @include media-max(md) { margin-top: 30px !important; }
+  @include media-max(md) {
+    margin-top: 30px !important;
+  }
+
+  background: transparent !important;
 
   .title,
   form {
     position: relative;
     z-index: 1;
   }
+
   form {
     margin: 40px 0 0;
     padding: 30px 40px 40px;
@@ -19,18 +24,22 @@
 
     .swiper {
       position: relative;
+
       &.hidden {
         .steps {
           color: var(--color-transparent);
+
           span {
             color: var(--color-transparent);
           }
         }
+
         .navs {
           visibility: hidden;
           opacity: 0;
         }
       }
+
       .steps {
         width: 100%;
         padding: 10px 0 32px;
@@ -40,13 +49,16 @@
         line-height: 24px;
         color: var(--color-text-hover);
 
-        @include media-max(md) { padding-bottom: 26px; }
+        @include media-max(md) {
+          padding-bottom: 26px;
+        }
 
         span {
           padding: 0 0 0 4px;
           color: var(--color-text-gray);
         }
       }
+
       .swiper-slide {
         display: flex;
         flex-wrap: nowrap;
@@ -65,29 +77,38 @@
             }
           }
         }
+
         .item {
           &:first-child {
             display: flex;
             flex-direction: column;
             width: 40%;
 
-            @include media-max(md) { width: 100%; }
+            @include media-max(md) {
+              width: 100%;
+            }
 
             .h3 {
               color: var(--color-text-hover);
 
-              @include media-max(md) { margin-bottom: 20px; }
+              @include media-max(md) {
+                margin-bottom: 20px;
+              }
 
             }
+
             .desc {
               margin: auto 0 0;
               font-weight: 700;
               color: var(--color-text-hover);
 
-              @include media-max(md) { display: none; }
+              @include media-max(md) {
+                display: none;
+              }
 
             }
           }
+
           &:last-child {
             width: 60%;
             min-height: 308px;
@@ -105,52 +126,65 @@
               width: 100%;
               min-width: 0;
 
-              @include media-max(md) { display: block; }
+              @include media-max(md) {
+                display: block;
+              }
 
               .field {
 
-                @include media-max(md) { margin-bottom: 15px; }
+                @include media-max(md) {
+                  margin-bottom: 15px;
+                }
 
                 textarea {
                   max-width: 140px;
                   max-height: 140px;
                   min-height: 140px;
+
                   &.big {
                     max-width: 250px;
                     max-height: 250px;
                     min-height: 250px;
                   }
                 }
+
                 .checkboxes {
                   display: flex;
                   align-items: center;
                   gap: 26px;
                   height: 50px;
+
                   .field {
                     height: 24px;
                   }
                 }
               }
             }
+
             img {
               max-width: 320px;
             }
+
             .desc {
               font-weight: 700;
               color: var(--color-text-gray);
+
               p {
                 padding: 0 0 10px;
+
                 &:last-child {
                   padding: 0;
                 }
               }
             }
+
             button.btn {
               margin: 32px 0 0;
             }
           }
         }
       }
+
       .navs {
         position: absolute;
         bottom: 0;
@@ -173,6 +207,7 @@
           font-size: 16px;
           font-weight: 700;
           line-height: 24px;
+
           &:hover {
             svg {
               use {
@@ -180,45 +215,56 @@
               }
             }
           }
+
           &:first-child {
             color: var(--color-text-gray);
+
             &:hover {
               color: var(--color-text-main);
+
               svg {
                 use {
                   fill: var(--color-text-main);
                 }
               }
             }
+
             svg {
               use {
                 fill: var(--color-text-gray);
               }
             }
           }
+
           &:last-child {
             color: var(--color-text-hover);
+
             &:hover {
               color: var(--color-text-main);
+
               svg {
                 use {
                   fill: var(--color-text-main);
                 }
               }
             }
+
             svg {
               use {
                 fill: var(--color-text-hover);
               }
             }
           }
+
           &.disable {
             display: none;
           }
+
           svg {
             max-width: 24px;
             min-width: 24px;
             height: 24px;
+
             use {
               fill: var(--color-text-hover);
             }

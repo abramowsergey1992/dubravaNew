@@ -128,5 +128,10 @@
 				</svg>
 			</button>
 		</div>
+		<a
+			href="https://mazi.ru/news"
+			class="btn transparent-gray h50 p32 fs16 fw700"
+			>Все&nbsp;новости</a
+		>
 	</div>
 </section>

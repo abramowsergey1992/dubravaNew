@@ -1649,12 +1649,18 @@ body {
     flex-direction: row;
     align-items: center;
     margin-top: 30px;
+
+
   }
 
   &__nav {
     display: flex;
     flex-direction: row;
     margin-right: auto;
+
+    @media(max-width:600px) {
+      display: none;
+    }
   }
 
   &__prev,
@@ -1664,6 +1670,12 @@ body {
     background: transparent;
     border: 0 solid;
     cursor: pointer;
+
+
+    svg {
+      width: initial !important;
+      height: initial !important;
+    }
 
     &.swiper-button-disabled {
       pointer-events: none;

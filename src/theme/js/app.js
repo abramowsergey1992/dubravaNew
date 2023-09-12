@@ -1102,3 +1102,38 @@ window.onload = () => {
 		searchForm.classList.remove("active");
 	});
 };
+
+$(function () {
+	if ($(".front-news").length) {
+		let slideWrapper = $(".front-news__swiper .swiper-wrapper");
+		$(".front-news__slide-column").each(function () {
+			$(this)
+				.find(".front-news__item")
+				.each(function () {
+					console.log(this);
+					slideWrapper.append(
+						`<div class="swiper-slide front-news__slide-mob"><div class="front-news__item br">${$(
+							this
+						).html()}</div></div>`
+					);
+				});
+		});
+		const swiper = new Swiper(".front-news__swiper", {
+			slidesPerView: 2,
+			spaceBetween: 16,
+
+			breakpoints: {
+				576: {
+					slidesPerView: 2,
+				},
+				1400: {
+					slidesPerView: "auto",
+				},
+			},
+			navigation: {
+				nextEl: $(".front-news__next")[0],
+				prevEl: $(".front-news__prev")[0],
+			},
+		});
+	}
+});

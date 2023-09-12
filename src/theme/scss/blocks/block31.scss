@@ -1,16 +1,20 @@
 .block31 {
   position: relative;
   z-index: 1;
+
   .swipernavs {
     position: absolute;
     top: 14px;
     right: 0;
   }
+
   .swiper {
     padding: 40px 0 0;
     overflow: visible;
+
     .swiper-wrapper {
       align-items: stretch;
+
       .swiper-slide {
         display: flex;
         flex-direction: column;
@@ -18,26 +22,32 @@
         padding: 30px 20px;
         background: var(--color-white-80);
         transition-property: all;
-        &:first-child {
+
+        &._green {
           background: var(--color-text-hover);
+
           .h3,
           .desc,
           .ico {
             color: var(--color-white);
           }
         }
+
         .h3 {
           color: var(--color-text-hover);
         }
+
         .desc {
           padding: 20px 0 98px;
           line-height: 22px;
         }
+
         .ico {
           width: 67px;
           height: 67px;
           margin: auto 0 0;
           color: var(--color-text-hover);
+
           svg {
             transition: all .35s ease;
           }

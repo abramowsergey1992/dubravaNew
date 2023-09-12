@@ -120,8 +120,13 @@ window.onload = () => {
 	setTimeout(() => {
 		loader.classList.add("hidden");
 		setTimeout(() => loader.remove(), 500);
+		setTimeout(
+			() => document.querySelector("html").classList.add("_load"),
+			1500
+		);
 	}, 500);
 	// Header
+
 	const header = document.querySelector("[data-header]");
 	let lastScroll = window.pageYOffset;
 	const toggleHeader = (hidden) => {

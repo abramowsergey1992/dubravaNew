@@ -446,6 +446,8 @@ body {
     align-items: center;
     gap: 5px;
 
+
+
     button {
       width: 38px;
       height: 38px;
@@ -1501,6 +1503,14 @@ body {
       margin-top: auto;
     }
 
+    .front-news__item-img-wrap {
+      img {
+        @media(min-width:1440px) {
+          aspect-ratio: 16/9;
+        }
+      }
+    }
+
     .front-news__item {
       flex: 1;
     }
@@ -1651,6 +1661,10 @@ body {
 
     .front-news__item-img-wrap {
       max-width: 266px;
+
+      @media(max-width:1700px) {
+        max-width: 338px;
+      }
 
       img {
         width: 100%;

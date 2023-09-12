@@ -8,7 +8,7 @@ body:has(.swiper.main.animate2) header {
   display: grid;
   grid-template-columns: 3.07fr 1fr;
   gap: 14px;
-  min-height: calc(100vh - 131px);
+  min-height: calc(100svh - 131px);
 
   @include media-max(lg) {
     grid-template-columns: 2fr 1fr;
@@ -29,7 +29,7 @@ body:has(.swiper.main.animate2) header {
       z-index: 2;
 
       @include media-max(lg) {
-        min-height: calc(100vh - 100px);
+        min-height: calc(100svh - 100px);
       }
 
       .swiper {
@@ -61,7 +61,7 @@ body:has(.swiper.main.animate2) header {
               left: -12px;
               border-radius: 0;
               width: 100vw;
-              height: 100vh;
+              height: 100svh;
             }
           }
 

@@ -1710,3 +1710,12 @@ body {
 
   &__next {}
 }
+
+body ul.accordion li ul li,
+html ul.accordion li ul li {
+  min-height: 160px;
+
+  a {
+    text-decoration: none;
+  }
+}

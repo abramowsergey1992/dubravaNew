@@ -18,16 +18,16 @@
               <i></i>
             </button>
             <ul>
-              <li class="br"><img src="img/main/s9/1.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/2.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/3.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/4.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/5.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/6.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/7.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/8.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/9.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/10.png" alt=""></li>
+              <li class="br"><a href="/"><img src="img/main/s9/1.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/2.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/3.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/4.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/5.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/6.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/7.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/8.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/9.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/10.png" alt=""></a></li>
             </ul>
           </li>
           <li>
@@ -36,16 +36,16 @@
               <i></i>
             </button>
             <ul>
-              <li class="br"><img src="img/main/s9/1.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/2.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/3.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/4.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/5.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/6.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/7.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/8.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/9.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/10.png" alt=""></li>
+              <li class="br"><a href="/"><img src="img/main/s9/1.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/2.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/3.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/4.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/5.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/6.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/7.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/8.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/9.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/10.png" alt=""><</a>/li>
             </ul>
           </li>
           <li>
@@ -54,16 +54,16 @@
               <i></i>
             </button>
             <ul>
-              <li class="br"><img src="img/main/s9/1.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/2.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/3.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/4.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/5.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/6.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/7.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/8.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/9.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/10.png" alt=""></li>
+              <li class="br"><a href="/"><img src="img/main/s9/1.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/2.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/3.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/4.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/5.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/6.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/7.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/8.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/9.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/10.png" alt=""></a></li>
             </ul>
           </li>
           <li>
@@ -72,16 +72,16 @@
               <i></i>
             </button>
             <ul>
-              <li class="br"><img src="img/main/s9/1.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/2.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/3.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/4.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/5.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/6.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/7.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/8.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/9.png" alt=""></li>
-              <li class="br"><img src="img/main/s9/10.png" alt=""></li>
+              <li class="br"><a href="/"><img src="img/main/s9/1.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/2.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/3.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/4.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/5.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/6.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/7.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/8.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/9.png" alt=""></a></li>
+              <li class="br"><a href="/"><img src="img/main/s9/10.png" alt=""></a></li>
             </ul>
           </li>
         </ul>

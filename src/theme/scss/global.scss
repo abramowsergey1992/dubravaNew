@@ -1006,6 +1006,17 @@ body {
     }
   }
 
+  [data-swiper="certificates"] {
+    overflow: visible !important;
+  }
+
+  .modalbox .gallery .swiper .swiper-slide .text {
+    @media(max-width:600px) {
+      top: -18px;
+      position: relative;
+    }
+  }
+
   .app {
     display: flex;
     flex-direction: column;

@@ -727,11 +727,16 @@ window.onload = () => {
 						}`;
 				};
 				window.swipers.certificates = new Swiper(swiperList[i], {
-					slidesPerView: 3,
+					slidesPerView: 1.2,
 					centeredSlides: true,
 					navigation: {
 						nextEl: ".certificates_next",
 						prevEl: ".certificates_prev",
+					},
+					breakpoints: {
+						576: {
+							slidesPerView: 3,
+						},
 					},
 					on: {
 						init: (s) => setCertificatesSteps(s),

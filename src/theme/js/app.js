@@ -11,55 +11,7 @@ mainNavLinksSub.forEach((li) => {
 		evt.currentTarget.parentElement.classList.toggle("active");
 	});
 });
-if (document.querySelector("#contact-map")) {
-	ymaps.ready(function () {
-		let center = document
-			.querySelector("#contact-map")
-			.dataset.coord.split(",");
-		console.log(center);
-		let myMap = new ymaps.Map(
-			"contact-map",
-			{
-				center: [
-					parseFloat(center[0].trim()),
-					parseFloat(center[1].trim()),
-				],
-				controls: ["zoomControl"],
-				zoom: 16,
-			},
-			{
-				searchControlProvider: "yandex#search",
-			}
-		);
 
-		myMap.behaviors.disable("scrollZoom");
-
-		//на мобильных устройствах... (проверяем по userAgent браузера)
-		if (
-			/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-				navigator.userAgent
-			)
-		) {
-			//... отключаем перетаскивание карты
-			myMap.behaviors.disable("drag");
-		}
-		myPlacemark = new ymaps.Placemark(
-			[parseFloat(center[0].trim()), parseFloat(center[1].trim())],
-			{
-				hintContent: "",
-				balloonContent: "",
-			},
-			{
-				iconLayout: "default#image",
-				iconImageHref:
-					document.querySelector("#contact-map").dataset.marker,
-				iconImageSize: [33, 33],
-				iconImageOffset: [-16, -16],
-			}
-		);
-		myMap.geoObjects.add(myPlacemark);
-	});
-}
 const swiper2 = new Swiper(".mySwiper2", {
 	spaceBetween: 50,
 	slidesPerView: 1,
@@ -1130,6 +1082,58 @@ window.onload = () => {
 };
 
 $(function () {
+	if (document.querySelector("#contact-map")) {
+		ymaps.ready(function () {
+			$(".map").each(function () {
+				let center = this.dataset.coord.split(",");
+				let marker = this.dataset.marker;
+				console.log(center);
+				let myMap = new ymaps.Map(
+					this,
+					{
+						center: [
+							parseFloat(center[0].trim()),
+							parseFloat(center[1].trim()),
+						],
+						controls: ["zoomControl"],
+						zoom: 16,
+					},
+					{
+						searchControlProvider: "yandex#search",
+					}
+				);
+
+				myMap.behaviors.disable("scrollZoom");
+
+				//на мобильных устройствах... (проверяем по userAgent браузера)
+				if (
+					/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+						navigator.userAgent
+					)
+				) {
+					//... отключаем перетаскивание карты
+					myMap.behaviors.disable("drag");
+				}
+				myPlacemark = new ymaps.Placemark(
+					[
+						parseFloat(center[0].trim()),
+						parseFloat(center[1].trim()),
+					],
+					{
+						hintContent: "",
+						balloonContent: "",
+					},
+					{
+						iconLayout: "default#image",
+						iconImageHref: marker,
+						iconImageSize: [33, 33],
+						iconImageOffset: [-16, -16],
+					}
+				);
+				myMap.geoObjects.add(myPlacemark);
+			});
+		});
+	}
 	if ($(".front-news").length) {
 		let slideWrapper = $(".front-news__swiper .swiper-wrapper");
 		$(".front-news__slide-column").each(function () {

@@ -52,8 +52,8 @@
           </ul>
         </div>
         <div class="item br">
-          <div class="map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9b5be233cff9876f58ab42fac306d8f69c2768b59ddc6c42805722f61c5b9577&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+          <div class="map" id="contact-map2" data-marker="img/contacts/map-label.svg" data-coord="55.729858,37.645699">
+        
           </div>
         </div>
       </div>

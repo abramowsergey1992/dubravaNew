@@ -1661,9 +1661,11 @@ body {
 
     .front-news__item-img-wrap {
       max-width: 266px;
+      min-width: 266px;
 
-      @media(max-width:1700px) {
-        max-width: 338px;
+      @media(min-width:1500px) {
+        max-width: 40% !important;
+        min-width: 40% !important;
       }
 
       img {

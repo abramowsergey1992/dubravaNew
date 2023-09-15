@@ -24,8 +24,8 @@
                 <input type="text" placeholder="example@email.com" data-validate="email">
               </div>
               <div class="field">
-                <label for="">Место работы (если медицинский работник) *</label>
-                <input type="text" placeholder="Компания" data-validate="text">
+                <label for="">Место работы (если медицинский работник) </label>
+                <input type="text" placeholder="Компания">
               </div>
             </div>
           </div>
@@ -42,8 +42,8 @@
                 <input type="text" placeholder="" data-validate="text">
               </div>
               <div class="field">
-                <label for="">Контактные данные, адрес *</label>
-                <input type="text" placeholder="" data-validate="text">
+                <label for="">Контактные данные, адрес </label>
+                <input type="text" placeholder="" >
               </div>
               <div class="field">
                 <label for="">Возраст *</label>
@@ -82,8 +82,8 @@
                 <textarea name="" placeholder="Поле ввода" data-validate="text"></textarea>
               </div>
               <div class="field">
-                <label for="">Лечение симптомов *</label>
-                <textarea name="" placeholder="Поле ввода" data-validate="text"></textarea>
+                <label for="">Лечение симптомов </label>
+                <textarea name="" placeholder="Поле ввода" ></textarea>
               </div>
             </div>
           </div>
@@ -100,16 +100,16 @@
                 <input type="text" placeholder="Лекарственный препарат" data-validate="text">
               </div>
               <div class="field">
-                <label for="">Номер серии ЛП *</label>
-                <input type="text" placeholder="хххххххххххх" data-validate="text">
+                <label for="">Номер серии ЛП </label>
+                <input type="text" placeholder="хххххххххххх">
               </div>
               <div class="field">
                 <label for="">Производитель *</label>
                 <input type="text" placeholder="Фирма производителя" data-validate="text">
               </div>
               <div class="field">
-                <label for="">Длительность приёма *</label>
-                <input type="text" placeholder="2–3 дня" data-validate="text">
+                <label for="">Длительность приёма</label>
+                <input type="text" placeholder="2–3 дня">
               </div>
             </div>
           </div>
@@ -121,12 +121,12 @@
           <div class="item">
             <div class="fieldset">
               <div class="field">
-                <label for="">Информация *</label>
-                <textarea name="" class="big" placeholder="Применение сопутствующих ЛП, сроки назначения, кратность приема" data-validate="text"></textarea>
+                <label for="">Информация </label>
+                <textarea name="" class="big" placeholder="Применение сопутствующих ЛП, сроки назначения, кратность приема"></textarea>
               </div>
               <div class="field">
-                <label for="">Другая важная информация *</label>
-                <textarea name="" class="big" placeholder="Диагноз, наличие аллергии, беременность, неэффективность, злоупотребление или другоеле ввода" data-validate="text"></textarea>
+                <label for="">Другая важная информация </label>
+                <textarea name="" class="big" placeholder="Диагноз, наличие аллергии, беременность, неэффективность, злоупотребление или другоеле ввода"></textarea>
               </div>
             </div>
           </div>

@@ -2,20 +2,21 @@
   <div class="item">
     <div class="swiper main br" data-swiper="gallery">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
+
+                <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></a></div>
       </div>
     </div>
     <div class="swiper thumb" data-swiper="gallery_thumb">
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper"> 
         <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
         <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
         <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>

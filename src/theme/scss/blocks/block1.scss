@@ -41,20 +41,17 @@ body:has(.swiper.main.animate2) header {
           transition: all .5s ease;
 
           &.animate1 {
-            // top: -115px;
-            // left: -48px;
-            width: calc(100%);
-            // height: 100vh;
-            // border-radius: 0;
+            top: -115px;
+            left: -48px;
+            width: calc(100% + 48px);
+            height: 100vh;
+            border-radius: 0;
             z-index: 2000;
           }
 
           &.animate2 {
-            width: calc(100Vw - 96px);
-
-            @media (max-width: 1199px) {
-              width: calc(100Vw - 24px);
-            }
+            width: 100Vw;
+            height: 100vh;
 
             @media (max-width: 800px) {
               top: -75px;

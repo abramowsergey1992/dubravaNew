@@ -123,6 +123,11 @@
     .item {
       padding: 70px 48px 78px;
 
+      @media(max-width:992px) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
       &.about {
         .h3 {
           padding: 20px 0 0;
@@ -226,6 +231,10 @@
             justify-content: space-between;
             gap: 16px;
 
+            @media(max-width:992px) {
+              flex-direction: column;
+            }
+
             .info {
               padding: 30px 20px;
               background: var(--color-white-80);
@@ -260,6 +269,11 @@
               max-width: 302px;
               min-width: 302px;
               overflow: hidden;
+
+              @media(max-width:992px) {
+                max-width: 100%;
+
+              }
 
               img {
                 width: 100%;
@@ -403,9 +417,17 @@
         .img {
           overflow: hidden;
           margin-top: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
 
           img {
-            width: 100%;
+            border-radius: 15px;
+            width: initial;
+            max-width: 100%;
+            height: initial;
+            max-height: 100%;
           }
         }
 

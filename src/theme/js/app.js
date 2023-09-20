@@ -963,22 +963,25 @@ window.onload = () => {
 			},
 		});
 	}
+	Fancybox.bind('[data-fancybox="gallery"]', {
+		// Your custom options
+	});
 	// Show text
-	const textBoxes = Array.from(document.querySelectorAll("[data-textbox]"));
-	for (let i in textBoxes) {
-		textBoxes[i].addEventListener("mouseover", ({ target }) => {
-			target = getParentByNode(target, "LI");
-			target = target.querySelector(".text");
-			target.style.height = `100%`;
-			target.style.paddingTop = `10px`;
-		});
-		textBoxes[i].addEventListener("mouseout", ({ target }) => {
-			target = getParentByNode(target, "LI");
-			target = target.querySelector(".text");
-			target.style.height = "0";
-			target.style.paddingTop = "0";
-		});
-	}
+	// const textBoxes = Array.from(document.querySelectorAll("[data-textbox]"));
+	// for (let i in textBoxes) {
+	// 	textBoxes[i].addEventListener("mouseover", ({ target }) => {
+	// 		target = getParentByNode(target, "LI");
+	// 		target = target.querySelector(".text");
+	// 		target.style.height = `100%`;
+	// 		target.style.paddingTop = `10px`;
+	// 	});
+	// 	textBoxes[i].addEventListener("mouseout", ({ target }) => {
+	// 		target = getParentByNode(target, "LI");
+	// 		target = target.querySelector(".text");
+	// 		target.style.height = "0";
+	// 		target.style.paddingTop = "0";
+	// 	});
+	// }
 	// Gallery
 	window.lightGalleryInstance = lightGallery(
 		document.querySelector("[lightgallery]")

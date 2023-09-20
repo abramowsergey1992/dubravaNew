@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
   <title>Карточка продукта</title>
   <link rel="stylesheet" href="theme/css/app.min.css?dev=31aug">
+  
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
 </head>
 
 <body>
@@ -87,20 +92,21 @@
   <div class="item">
     <div class="swiper main br" data-swiper="gallery">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
+
+                <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></a></div>
       </div>
     </div>
     <div class="swiper thumb" data-swiper="gallery_thumb">
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper"> 
         <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
         <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
         <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
@@ -604,7 +610,7 @@
   searchField.addEventListener('input', searchInputHandler);
 </script>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="theme/js/vendors.min.js"></script>
 <script src="theme/js/app.min.js?dev=31aug"></script>

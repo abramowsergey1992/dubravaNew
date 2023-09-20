@@ -52,41 +52,44 @@
     </div>
   </div>
   <div class="item">
-    <a href="" class="br">
-      <div class="gallery">
-        <div class="swiper" data-swiper="main_side">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="img/main/s1/side1.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="img/main/s1/side2.png" alt="">
-            </div>
+     <a href="https://mazi.ru/catalog" class="br">
+          <div class="gallery">
+              <div class="swiper" data-swiper="main_side">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <img src="https://mazi.ru/img/main/s1/side1.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="https://mazi.ru/img/main/s1/side2.png" alt="">
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
-      </div>
-      <div class="info">
-        <div class="h3">Каталог<br>продукции</div>
-        <img src="img/main/icons/s1/1.svg" alt="">
-      </div>
-    </a>
-    <a href="" class="br">
-      <div class="gallery">
-        <div class="swiper" data-swiper="main_side">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="img/main/s1/side1.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="img/main/s1/side2.png" alt="">
-            </div>
+          <div class="info">
+              <div class="h3">Каталог<br>продукции</div>
+              <img src="https://mazi.ru/img/main/icons/s1/1.svg" alt="">
           </div>
-        </div>
-      </div>
-      <div class="info">
-        <div class="h3">Контрактное<br>производство</div>
-        <img src="img/main/icons/s1/2.svg" alt="">
-      </div>
-    </a>
+      </a>
+      <a href="https://mazi.ru/contract" class="br">
+          <div class="gallery">
+              <div class="swiper" data-swiper="main_side">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <img src="https://mazi.ru/img/main/s1/new-slide-1.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="https://mazi.ru/img/main/s1/new-slide-2.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="https://mazi.ru/img/main/s1/new-slide-3.png" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="info">
+              <div class="h3">Контрактное<br>производство</div>
+              <img src="https://mazi.ru/img/main/icons/s1/2.svg" alt="">
+          </div>
+      </a>
   </div>
 </section>

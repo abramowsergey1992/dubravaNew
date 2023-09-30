@@ -3,16 +3,16 @@
     <div class="swiper main br" data-swiper="gallery">
       <div class="swiper-wrapper">
 
-                <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></a></div>
-        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></a></div>
-        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></a></div>
-        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></a></div>
-        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></a></div>
-        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></a></div>
-        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></a></div>
-        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></a></div>
-        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></a></div>
-        <div class="swiper-slide"><a data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></a></div>
+                <div class="swiper-slide" data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></div>
+        <div class="swiper-slide"data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></div>
+        <div class="swiper-slide data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></div>
+        <div class="swiper-slide" data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></div>
+        <div class="swiper-slide"data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></div>
+        <div class="swiper-slide" data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></div>
+        <div class="swiper-slide" data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></div>
+        <div class="swiper-slide" data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></div>
+        <div class="swiper-slide" data-fancybox="gallery" href="img/product/1.jpg"><img src="img/product/1.jpg" alt=""></div>
+        <div class="swiper-slide" data-fancybox="gallery" href="img/product/2.jpg"><img src="img/product/2.jpg" alt=""></div>
       </div>
     </div>
     <div class="swiper thumb" data-swiper="gallery_thumb">
@@ -60,12 +60,12 @@
     <div class="orders">
       <div class="desc">Продукт можно приобрести</div>
       <ul>
-        <li><a href=""><img src="img/product/1.svg" alt=""></a></li>
-        <li><a href=""><img src="img/product/2.svg" alt=""></a></li>
-        <li><a href=""><img src="img/product/3.svg" alt=""></a></li>
-        <li><a href=""><img src="img/product/4.svg" alt=""></a></li>
-        <li><a href=""><img src="img/product/5.svg" alt=""></a></li>
-        <li><a href=""><img src="img/product/6.svg" alt=""></a></li>
+        <li><a href=""><img src="img/product/1.svg" alt=""></li>
+        <li><a href=""><img src="img/product/2.svg" alt=""></li>
+        <li><a href=""><img src="img/product/3.svg" alt=""></li>
+        <li><a href=""><img src="img/product/4.svg" alt=""></li>
+        <li><a href=""><img src="img/product/5.svg" alt=""></li>
+        <li><a href=""><img src="img/product/6.svg" alt=""></li>
       </ul>
     </div>
   </div>

@@ -1359,6 +1359,10 @@ body {
 
   }
 
+  [data-fancybox] {
+    cursor: pointer;
+  }
+
   .blurico {
     &::before {
       z-index: 1;

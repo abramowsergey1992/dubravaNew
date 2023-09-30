@@ -487,6 +487,7 @@ window.onload = () => {
 				window.swipers.gallery = new Swiper(swiperList[i], {
 					effect: "fade",
 					loop: true,
+					preventClicks: false,
 					allowTouchMove: false,
 					on: {
 						init: (s) => {
@@ -963,8 +964,9 @@ window.onload = () => {
 			},
 		});
 	}
+
 	Fancybox.bind('[data-fancybox="gallery"]', {
-		// Your custom options
+		animated: false,
 	});
 	// Show text
 	// const textBoxes = Array.from(document.querySelectorAll("[data-textbox]"));
@@ -1060,7 +1062,21 @@ window.onload = () => {
 					"modal"
 				);
 				openModal && toggleModal(openModal);
+				alert($(formsValidate[i]).attr("action"));
 				setTimeout(() => {
+					$.ajax({
+						url: $(formsValidate[i]).attr("action"),
+						data: $(formsValidate[i]).serialize(),
+						method: "POST",
+						headers: {
+							"X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr(
+								"content"
+							),
+						},
+						context: document.body,
+						success: function () {},
+						error: function () {},
+					});
 					const modal = document.querySelector(
 						`[data-modal-target="${
 							testResponse ? "feedback_success" : "feedback_error"

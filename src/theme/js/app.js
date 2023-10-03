@@ -1062,7 +1062,7 @@ window.onload = () => {
 					"modal"
 				);
 				openModal && toggleModal(openModal);
-				alert($(formsValidate[i]).attr("action"));
+
 				setTimeout(() => {
 					$.ajax({
 						url: $(formsValidate[i]).attr("action"),
@@ -1074,8 +1074,14 @@ window.onload = () => {
 							),
 						},
 						context: document.body,
-						success: function () {},
-						error: function () {},
+						success: function (data) {
+							console.log("Отправка прошла успешно");
+							console.log(data);
+						},
+						error: function (data) {
+							console.log("Ошибка при отправке");
+							console.log(data);
+						},
 					});
 					const modal = document.querySelector(
 						`[data-modal-target="${

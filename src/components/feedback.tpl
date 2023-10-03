@@ -3,7 +3,7 @@
     <button class="close" type="button" data-modal-triger="feedback"></button>
     <div class="h2">Оставьте заявку</div>
     <div class="text">Менеджер свяжется с вами и ответит на все интересующие вопросы.</div>
-    <form action="feedback.html" validate>
+    <form action="r.json" validate>
       <div class="items">
         <div class="item">
           <div class="fieldset">

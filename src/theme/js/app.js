@@ -1075,10 +1075,12 @@ window.onload = () => {
 						},
 						context: document.body,
 						success: function (data) {
+							formsValidate[i].reset();
 							console.log("Отправка прошла успешно");
 							console.log(data);
 						},
 						error: function (data) {
+							formsValidate[i].reset();
 							console.log("Ошибка при отправке");
 							console.log(data);
 						},

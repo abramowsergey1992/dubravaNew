@@ -1067,7 +1067,7 @@ window.onload = () => {
 					$.ajax({
 						url: $(formsValidate[i]).attr("action"),
 						data: $(formsValidate[i]).serialize(),
-						method: "POST",
+						method: $(formsValidate[i]).attr("method"),
 						headers: {
 							"X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr(
 								"content"
@@ -1078,20 +1078,21 @@ window.onload = () => {
 							formsValidate[i].reset();
 							console.log("Отправка прошла успешно");
 							console.log(data);
+							const modal = document.querySelector(
+								`[data-modal-target="feedback_success"]`
+							);
+							modal && toggleModal(modal);
 						},
 						error: function (data) {
 							formsValidate[i].reset();
 							console.log("Ошибка при отправке");
 							console.log(data);
+							const modal = document.querySelector(
+								`[data-modal-target="feedback_error"]`
+							);
+							modal && toggleModal(modal);
 						},
 					});
-					const modal = document.querySelector(
-						`[data-modal-target="${
-							testResponse ? "feedback_success" : "feedback_error"
-						}"]`
-					);
-					modal && toggleModal(modal);
-					testResponse = !testResponse;
 				}, 200);
 				event.preventDefault();
 			} else {
@@ -1109,6 +1110,61 @@ window.onload = () => {
 };
 
 $(function () {
+	let isModal = false;
+	let toggleModal = (target) => {
+		if (!isModal) {
+			isModal = true;
+			document.body.classList.toggle("noscroll");
+			if (target.classList.contains("open")) {
+				target.classList.remove("open");
+				setTimeout(() => {
+					target.classList.remove("active");
+					isModal = false;
+				}, 200);
+			} else {
+				target.classList.add("active");
+				setTimeout(() => {
+					target.classList.add("open");
+					isModal = false;
+				}, 200);
+			}
+		}
+	};
+	if (document.querySelector("#report")) {
+		console.log("xxx");
+		$("#submit-report-form").click(function (event) {
+			event.preventDefault();
+			$.ajax({
+				url: $("#report-form").attr("action"),
+				data: $("#report-form").serialize(),
+				method: $("#report-form").attr("method"),
+				headers: {
+					"X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr(
+						"content"
+					),
+				},
+				context: document.body,
+				success: function (data) {
+					$("#report-form")[0].reset();
+					console.log("Отправка прошла успешно");
+					console.log(data);
+					const modal = document.querySelector(
+						`[data-modal-target="feedback_success"]`
+					);
+					modal && toggleModal(modal);
+				},
+				error: function (data) {
+					$("#report-form")[0].reset();
+					console.log("Ошибка при отправке");
+					console.log(data);
+					const modal = document.querySelector(
+						`[data-modal-target="feedback_error"]`
+					);
+					modal && toggleModal(modal);
+				},
+			});
+		});
+	}
 	if (document.querySelector("#contact-map")) {
 		ymaps.ready(function () {
 			$(".map").each(function () {

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+	<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
   <title>Фармаконадзор</title>
@@ -12,16 +12,16 @@
 />
 </head>
 
-<body>
-<section class="loader" data-loader>
+	<body>
+		<section class="loader" data-loader>
   <div class="logo">
     <img src="theme/img/logo_gray.svg" alt="">
     <img src="theme/img/logo.svg" alt="">
   </div>
 </section>
 
-<div class="app pharmacovigilance_page">
-  <header class="main" data-header>
+		<div class="app pharmacovigilance_page">
+			<header class="main" data-header>
   <div class="wrap">
     <a href="main.html" class="logo"><img src="theme/img/logo.svg" alt=""></a>
     <ul class="nav">
@@ -80,15 +80,14 @@
   </div>
 </header>
 
-  <main class="wrap content">
-    <section class="breads">
+			<main class="wrap content">
+				<section class="breads">
   <ul>
     <li><a href="">Главная</a></li>
     <li><span>Фармаконадзор</span></li>
   </ul>
 </section>
-
-    <section class="block11 bganimation style8">
+ <section class="block11 bganimation style8">
   <h1>Фармаконадзор — мониторинг безопасности препаратов</h1>
   <div class="info">
     <div class="text">«Если препарат лишен побочных эффектов, стоит задуматься, есть ли у него какие-либо эффекты вообще»</div>
@@ -97,7 +96,7 @@
   </div>
 </section>
 
-    <section class="block12 br" data-aos="fade-up">
+				<section class="block12 br" data-aos="fade-up">
   
     <img class="br" src="img/farma/image.jpg" alt="">
     <div class="info br">
@@ -112,7 +111,7 @@
   
 </section>
 
-    <section class="block13 br" data-aos="fade-up">
+				<section class="block13 br" data-aos="fade-up">
   
     <div class="text">
       <p>ЗАО «Зеленая дубрава», заботясь о здоровье своих потребителей, создает высококачественные, востребованные и доступные препараты.</p>
@@ -131,7 +130,7 @@
 
 
 
-    <section class="block14" data-aos="fade-up">
+				<section class="block14" data-aos="fade-up">
   <ul>
     <li class="br">
       <img src="img/farma/icons/1.svg" alt="">
@@ -146,9 +145,9 @@
   </ul>
 </section>
 
-    <section class="block15 bganimation style7" data-aos="fade-up" id="report">
+				<section class="block15 bganimation style7" data-aos="fade-up" id="report">
   <div class="h1">Сообщение о нежелательной реакции</div>
-  <form action="" class="br">
+  <form action="r.json" id="report-form" method='GET' class="br">
     <div class="swiper br" data-swiper="quiz">
       <div class="steps" data-quiz-steps></div>
       <div class="swiper-wrapper">
@@ -290,7 +289,7 @@
               <p>С лицом, направившим сообщение о нежелательной реакции, может связаться представитель отдела фармаконадзора ЗАО «Зеленая дубрава» для уточнения информации, отправленной в сообщении.</p>
 
             </div>
-            <button class="btn transparent-gray h50 p32 fs16 fw700" type="submit">Отправить</button>
+            <button class="btn transparent-gray h50 p32 fs16 fw700" type="button" id="submit-report-form">Отправить</button>
           </div>
         </div>
       </div>
@@ -308,8 +307,8 @@
   </form>
 </section>
 
-  </main>
-  <footer class="wrap main">
+			</main>
+			<footer class="wrap main">
   <div class="item">
     <a href="/" class="logo"><img src="theme/img/logo.svg" alt=""></a>
     <div class="desc">141801, Московская область, г. Дмитров, <br>ул. Профессиональная, д. 151.</div>
@@ -361,8 +360,24 @@
   </div>
 </footer>
 
+		</div>
+		<div class="modal modalbox" data-modal-target="feedback_success" data-modal-triger="feedback_success">
+  <div class="window">
+    <button class="close" type="button" data-modal-triger="feedback_success"></button>
+    <div class="h2">Спасибо! Ваша форма успешно отправлена!</div>
+    <div class="text">Скоро менеджер свяжется с вами и ответит на все интересующие вопросы.</div>
+  </div>
 </div>
-<div
+
+		<div class="modal modalbox" data-modal-target="feedback_error" data-modal-triger="feedback_error">
+  <div class="window">
+    <button class="close" type="button" data-modal-triger="feedback_error"></button>
+    <div class="h2">Что-то пошло не так.</div>
+    <div class="text">Произошла ошибка, пожалуйста, обновите страницу и заполните форму ещё раз.</div>
+  </div>
+</div>
+
+		<div
 	class="modal modalbox modalbox_trans"
 	data-modal-target="search"
 	data-modal-triger="search">
@@ -434,11 +449,10 @@
 	}, 250);
 	searchField.addEventListener("input", searchInputHandler);
 </script>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="theme/js/vendors.min.js"></script>
 <script src="theme/js/app.min.js?dev=31aug"></script>
 
-</body>
+	</body>
 </html>

@@ -1,6 +1,6 @@
 <section class="block15 bganimation style7" data-aos="fade-up" id="report">
   <div class="h1">Сообщение о нежелательной реакции</div>
-  <form action="" class="br">
+  <form action="r.json" id="report-form" method='GET' class="br">
     <div class="swiper br" data-swiper="quiz">
       <div class="steps" data-quiz-steps></div>
       <div class="swiper-wrapper">
@@ -142,7 +142,7 @@
               <p>С лицом, направившим сообщение о нежелательной реакции, может связаться представитель отдела фармаконадзора ЗАО «Зеленая дубрава» для уточнения информации, отправленной в сообщении.</p>
 
             </div>
-            <button class="btn transparent-gray h50 p32 fs16 fw700" type="submit">Отправить</button>
+            <button class="btn transparent-gray h50 p32 fs16 fw700" type="button" id="submit-report-form">Отправить</button>
           </div>
         </div>
       </div>
